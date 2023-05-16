@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\frmts\pcidsk\pcidskdataset2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\frmts\pcidsk\gdal_edb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\frmts\pcidsk\vsi_pcidsk_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\frmts\pcidsk\ogrpcidsklayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\frmts\pcidsk\pcidskdataset2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\asciitiledir.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\asciitilelayer.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\binarytiledir.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\binarytilelayer.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\blockdir.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\blockfile.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\blocklayer.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\blocktiledir.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\blocktilelayer.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cbandinterleavedchannel.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cexternalchannel.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskchannel.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpixelinterleavedchannel.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ctiledchannel.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\clinksegment.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskblockfile.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskfile.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\edb_pcidsk.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\libjpeg_io.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\metadataset_p.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pcidsk_pubutils.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pcidsk_raster.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pcidsk_scanint.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pcidsk_utils.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pcidskbuffer.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pcidskcreate.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pcidskexception.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pcidskinterfaces.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pcidskopen.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidsk_array.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidsk_tex.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskbinarysegment.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskbitmap.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskblut.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskpct.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskephemerissegment.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskgcp2segment.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskgeoref.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidsklut.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskbpct.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskpolymodel.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskrpcmodel.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidsksegment.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidsktoutinmodel.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskvectorsegment.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpcidskvectorsegment_consistencycheck.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\metadatasegment_p.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\systiledir.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vecsegdataindex.obj" />
+    <Object Include=".\sdk\pcidsk_sdk.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vecsegheader.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{07A414C3-BAD2-3F93-88D2-B2A101CC054E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{7E46F6C6-3D84-3652-AB2B-B2E2F332B84D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AFBF3D6C-1CBC-3397-9CD5-82BB52C95300}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmldriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmlfeaturestyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmllayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmlfeature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmlgeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmlstyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmldatasource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmlfield.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ogr\ogrsf_frmts\libkml\libkml_headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmlfield.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogr_libkml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmlfeaturestyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmlfeature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmlgeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ogr\ogrsf_frmts\libkml\ogrlibkmlstyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{07A414C3-BAD2-3F93-88D2-B2A101CC054E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AFBF3D6C-1CBC-3397-9CD5-82BB52C95300}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

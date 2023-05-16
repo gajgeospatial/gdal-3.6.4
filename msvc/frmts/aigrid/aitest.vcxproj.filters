@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\frmts\aigrid\aitest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ogr\ogrpgeogeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include=".\gdal_AIGrid.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\aigccitt.obj" />
+    <Object Include=".\gdal_AIGrid.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\aigdataset.obj" />
+    <Object Include=".\gdal_AIGrid.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\aigopen.obj" />
+    <Object Include=".\gdal_AIGrid.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gridlib.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_bin.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_rawbin.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_e00gen.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_e00parse.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_e00read.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_mbyte.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_misc.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravcbindatasource.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravcbindriver.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravcbinlayer.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravce00datasource.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravcdatasource.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravce00driver.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravce00layer.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravclayer.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\shape\ogr_Shape.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\shape2ogr.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\shape\ogr_Shape.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\shp_vsi.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\shape\ogr_Shape.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrshapedatasource.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\shape\ogr_Shape.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrshapedriver.obj" />
+    <Object Include="..\..\ogr\ogrsf_frmts\shape\ogr_Shape.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrshapelayer.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{7E46F6C6-3D84-3652-AB2B-B2E2F332B84D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AFBF3D6C-1CBC-3397-9CD5-82BB52C95300}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

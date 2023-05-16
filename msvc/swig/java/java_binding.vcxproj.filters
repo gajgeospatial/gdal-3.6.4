@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\33daa1a6876c8d0a2380c28e57bbcf0b\javadoc.zip.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\33daa1a6876c8d0a2380c28e57bbcf0b\gdal.jar.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\c45df050166125b404365ba448c3b8c6\java_binding.rule" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\java_binding" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{401AE35D-CBD1-35CB-AAB2-FDA006E23AA3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

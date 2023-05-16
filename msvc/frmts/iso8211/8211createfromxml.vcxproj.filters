@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\frmts\iso8211\8211createfromxml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include=".\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfmodule.obj" />
+    <Object Include=".\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfutils.obj" />
+    <Object Include=".\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddffielddefn.obj" />
+    <Object Include=".\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfrecord.obj" />
+    <Object Include=".\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddffield.obj" />
+    <Object Include=".\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfsubfielddefn.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{7E46F6C6-3D84-3652-AB2B-B2E2F332B84D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AFBF3D6C-1CBC-3397-9CD5-82BB52C95300}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

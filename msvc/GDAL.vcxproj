@@ -1,0 +1,1201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{925280C0-6A3B-3443-9629-1575D5EDDAE2}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gdal</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gdald</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">gdal-362</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gdal</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">gdal-362</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gdal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gdal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;SQLite3_HAS_COLUMN_METADATA;SQLite3_HAS_RTREE;CMAKE_INTDIR="Debug";GDAL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;SQLite3_HAS_COLUMN_METADATA;SQLite3_HAS_RTREE;CMAKE_INTDIR=\"Debug\";GDAL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>json-c.lib;zlib.lib;libcurl-d_imp.lib;odbc32.lib;libxml2.lib;cryptopp.lib;zstd.lib;liblzma.lib;deflate.lib;liblz4.lib;blosc.lib;wbemuuid.lib;geos_c.lib;OpenCL.lib;proj.lib;libqhull.lib;proj.lib;geos_c.lib;zlib.lib;expat.lib;xerces-c_3D.lib;json-c.lib;jpeg.lib;zlib.lib;jpeg.lib;proj.lib;libtiff_i.lib;geotiff_i.lib;geos_c.lib;jpeg.lib;libtiff_i.lib;proj.lib;json-c.lib;geotiff_i.lib;libtiff_i.lib;ws2_32.lib;jpeg.lib;libpng14.lib;zlib.lib;Lerc.lib;zstd.lib;libpng14.lib;zlib.lib;json-c.lib;zlib.lib;zlib.lib;libgiflib-5.0.4.lib;netcdf.lib;blosc.lib;json-c.lib;json-c.lib;geos_c.lib;sqlite3.lib;zlib.lib;json-c.lib;json-c.lib;expat.lib;expat.lib;xerces-c_3D.lib;sqlite3.lib;expat.lib;expat.lib;expat.lib;expat.lib;expat.lib;xerces-c_3D.lib;json-c.lib;sqlite3.lib;proj.lib;pcre.lib;libspatialite.lib;sqlite3.lib;expat.lib;sqlite3.lib;geos_c.lib;sqlite3.lib;json-c.lib;xerces-c_3D.lib;geos_c.lib;odbc32.lib;expat.lib;expat.lib;expat.lib;geos_c.lib;json-c.lib;libxml2.lib;geos_c.lib;proj.lib;psapi.lib;proj.lib;json-c.lib;libiconv.lib;legacy_stdio_definitions.lib;odbccp32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(JSON_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CRYPTOPP_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZSTD_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBLZMA_DIR)\windows\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(DEFLATE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LZ4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(BLOSC_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64;..\..\$(PROJ_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(QHULL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(EXPAT_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(XERCES_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LERC_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GIF_DIR)\build.vc11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(NETCDF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SPATIALITE_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ICONV_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdald.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;SQLite3_HAS_COLUMN_METADATA;SQLite3_HAS_RTREE;CMAKE_INTDIR="Debug";GDAL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;SQLite3_HAS_COLUMN_METADATA;SQLite3_HAS_RTREE;CMAKE_INTDIR=\"Debug\";GDAL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>json-c.lib;zlib.lib;libcurl-d_imp.lib;odbc32.lib;libxml2.lib;cryptlib.lib;zstd.lib;liblzma.lib;deflate.lib;liblz4.lib;blosc.lib;wbemuuid.lib;geos_c.lib;OpenCL.lib;proj.lib;libqhull_d.lib;expat.lib;xerces-c_3D.lib;jpeg.lib;libtiff_i.lib;geotiff_i.lib;ws2_32.lib;libpng14.lib;Lerc.lib;libgiflib-5.0.4.lib;netcdf.lib;sqlite3.lib;pcre.lib;libspatialite.lib;psapi.lib;iconv.lib;legacy_stdio_definitions.lib;odbccp32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(JSON_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CRYPTOPP_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZSTD_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBLZMA_DIR)\windows\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(DEFLATE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LZ4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(BLOSC_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(QHULL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64;..\..\$(PROJ_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(EXPAT_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(XERCES_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LERC_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GIF_DIR)\build.vc11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(NETCDF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SPATIALITE_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ICONV_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdal_i.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;SQLite3_HAS_COLUMN_METADATA;SQLite3_HAS_RTREE;CMAKE_INTDIR="Release";GDAL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;SQLite3_HAS_COLUMN_METADATA;SQLite3_HAS_RTREE;CMAKE_INTDIR=\"Release\";GDAL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>json-c.lib;zlib.lib;libcurl_imp.lib;odbc32.lib;libxml2.lib;cryptopp.lib;zstd.lib;liblzma.lib;deflate.lib;liblz4.lib;blosc.lib;wbemuuid.lib;geos_c.lib;OpenCL.lib;proj.lib;libqhull.lib;proj.lib;geos_c.lib;zlib.lib;expat.lib;xerces-c_3.lib;json-c.lib;jpeg.lib;zlib.lib;jpeg.lib;proj.lib;libtiff_i.lib;geotiff_i.lib;geos_c.lib;jpeg.lib;libtiff_i.lib;proj.lib;json-c.lib;geotiff_i.lib;libtiff_i.lib;ws2_32.lib;jpeg.lib;libpng14.lib;zlib.lib;Lerc.lib;zstd.lib;libpng14.lib;zlib.lib;json-c.lib;zlib.lib;zlib.lib;libgiflib-5.0.4.lib;netcdf.lib;blosc.lib;json-c.lib;json-c.lib;geos_c.lib;sqlite3.lib;zlib.lib;json-c.lib;json-c.lib;expat.lib;expat.lib;xerces-c_3.lib;sqlite3.lib;expat.lib;expat.lib;expat.lib;expat.lib;expat.lib;xerces-c_3.lib;json-c.lib;sqlite3.lib;proj.lib;pcre.lib;libspatialite.lib;sqlite3.lib;expat.lib;sqlite3.lib;geos_c.lib;sqlite3.lib;json-c.lib;xerces-c_3.lib;geos_c.lib;odbc32.lib;expat.lib;expat.lib;expat.lib;geos_c.lib;json-c.lib;libxml2.lib;geos_c.lib;proj.lib;psapi.lib;proj.lib;json-c.lib;libiconv.lib;legacy_stdio_definitions.lib;odbccp32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(JSON_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CRYPTOPP_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZSTD_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBLZMA_DIR)\windows\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(DEFLATE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LZ4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(BLOSC_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64;..\..\$(PROJ_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(QHULL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(EXPAT_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(XERCES_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LERC_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GIF_DIR)\build.vc11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(NETCDF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SPATIALITE_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ICONV_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdal.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;SQLite3_HAS_COLUMN_METADATA;SQLite3_HAS_RTREE;CMAKE_INTDIR="Release";GDAL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;SQLite3_HAS_COLUMN_METADATA;SQLite3_HAS_RTREE;CMAKE_INTDIR=\"Release\";GDAL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>json-c.lib;zlib.lib;libcurl_imp.lib;odbc32.lib;libxml2.lib;cryptlib.lib;zstd.lib;liblzma.lib;deflate.lib;liblz4.lib;blosc.lib;wbemuuid.lib;geos_c.lib;OpenCL.lib;proj.lib;libqhull.lib;expat.lib;xerces-c_3.lib;jpeg.lib;libtiff_i.lib;geotiff_i.lib;ws2_32.lib;libpng14.lib;Lerc.lib;libgiflib-5.0.4.lib;netcdf.lib;sqlite3.lib;pcre.lib;libspatialite.lib;psapi.lib;iconv.lib;legacy_stdio_definitions.lib;odbccp32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(JSON_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CRYPTOPP_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZSTD_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBLZMA_DIR)\windows\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(DEFLATE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LZ4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(BLOSC_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64;..\..\$(PROJ_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(QHULL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(EXPAT_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(XERCES_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LERC_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GIF_DIR)\build.vc11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(NETCDF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SPATIALITE_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ICONV_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdal_i.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>copy /y $(OutDir)\\$(TargetName).dll $(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\bin\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;SQLite3_HAS_COLUMN_METADATA;SQLite3_HAS_RTREE;CMAKE_INTDIR="MinSizeRel";GDAL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;SQLite3_HAS_COLUMN_METADATA;SQLite3_HAS_RTREE;CMAKE_INTDIR=\"MinSizeRel\";GDAL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>json-c.lib;zlib.lib;libcurl_imp.lib;odbc32.lib;libxml2.lib;cryptopp.lib;zstd.lib;liblzma.lib;deflate.lib;liblz4.lib;blosc.lib;wbemuuid.lib;geos_c.lib;OpenCL.lib;proj.lib;libqhull.lib;proj.lib;geos_c.lib;zlib.lib;expat.lib;xerces-c_3.lib;json-c.lib;jpeg.lib;zlib.lib;jpeg.lib;proj.lib;libtiff_i.lib;geotiff_i.lib;geos_c.lib;jpeg.lib;libtiff_i.lib;proj.lib;json-c.lib;geotiff_i.lib;libtiff_i.lib;ws2_32.lib;jpeg.lib;libpng14.lib;zlib.lib;Lerc.lib;zstd.lib;libpng14.lib;zlib.lib;json-c.lib;zlib.lib;zlib.lib;libgiflib-5.0.4.lib;netcdf.lib;blosc.lib;json-c.lib;json-c.lib;geos_c.lib;sqlite3.lib;zlib.lib;json-c.lib;json-c.lib;expat.lib;expat.lib;xerces-c_3.lib;sqlite3.lib;expat.lib;expat.lib;expat.lib;expat.lib;expat.lib;xerces-c_3.lib;json-c.lib;sqlite3.lib;proj.lib;pcre.lib;libspatialite.lib;sqlite3.lib;expat.lib;sqlite3.lib;geos_c.lib;sqlite3.lib;json-c.lib;xerces-c_3.lib;geos_c.lib;odbc32.lib;expat.lib;expat.lib;expat.lib;geos_c.lib;json-c.lib;libxml2.lib;geos_c.lib;proj.lib;psapi.lib;proj.lib;json-c.lib;libiconv.lib;legacy_stdio_definitions.lib;odbccp32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(JSON_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CRYPTOPP_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZSTD_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBLZMA_DIR)\windows\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(DEFLATE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LZ4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(BLOSC_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64;..\..\$(PROJ_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(QHULL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(EXPAT_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(XERCES_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LERC_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GIF_DIR)\build.vc11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(NETCDF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SPATIALITE_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ICONV_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdal.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;SQLite3_HAS_COLUMN_METADATA;SQLite3_HAS_RTREE;CMAKE_INTDIR="RelWithDebInfo";GDAL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;SQLite3_HAS_COLUMN_METADATA;SQLite3_HAS_RTREE;CMAKE_INTDIR=\"RelWithDebInfo\";GDAL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\apps;..\alg;..\gcore;.\gcore\gdal_version_full;..\port;.\port;..\ogr;..\ogr\ogrsf_frmts;..\..\$(JSON_DIR);..\..\$(ZLIB_DIR);..\..\$(CURL_DIR)\include;..\..\$(ICONV_DIR);..\..\$(LIBXML2_DIR)\Include;..\..\$(CRYPTOPP_DIR);..\..\$(ZSTD_DIR)\lib;..\..\$(LIBLZMA_DIR)\src\liblzma\api;..\..\$(LZ4_DIR)\lib;..\..\$(BLOSC_DIR)\blosc;..\..\$(GEOS_DIR)\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include;..\..\$(PROJ_DIR)\src;..\..\$(EXPAT_DIR)\lib;..\..\$(JPEG_DIR);..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\$(PNG_DIR);..\..\$(LERC_DIR)\src\LercLib\include;..\..\$(GIF_DIR)\include;..\..\$(NETCDF_DIR)\include;..\..\$(SQLITE3_DIR);..\..\$(PCRE_DIR);..\..\$(SPATIALITE_DIR)\src\headers;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>json-c.lib;zlib.lib;libcurl_imp.lib;odbc32.lib;libxml2.lib;cryptopp.lib;zstd.lib;liblzma.lib;deflate.lib;liblz4.lib;blosc.lib;wbemuuid.lib;geos_c.lib;OpenCL.lib;proj.lib;libqhull.lib;proj.lib;geos_c.lib;zlib.lib;expat.lib;xerces-c_3.lib;json-c.lib;jpeg.lib;zlib.lib;jpeg.lib;proj.lib;libtiff_i.lib;geotiff_i.lib;geos_c.lib;jpeg.lib;libtiff_i.lib;proj.lib;json-c.lib;geotiff_i.lib;libtiff_i.lib;ws2_32.lib;jpeg.lib;libpng14.lib;zlib.lib;Lerc.lib;zstd.lib;libpng14.lib;zlib.lib;json-c.lib;zlib.lib;zlib.lib;libgiflib-5.0.4.lib;netcdf.lib;blosc.lib;json-c.lib;json-c.lib;geos_c.lib;sqlite3.lib;zlib.lib;json-c.lib;json-c.lib;expat.lib;expat.lib;xerces-c_3.lib;sqlite3.lib;expat.lib;expat.lib;expat.lib;expat.lib;expat.lib;xerces-c_3.lib;json-c.lib;sqlite3.lib;proj.lib;pcre.lib;libspatialite.lib;sqlite3.lib;expat.lib;sqlite3.lib;geos_c.lib;sqlite3.lib;json-c.lib;xerces-c_3.lib;geos_c.lib;odbc32.lib;expat.lib;expat.lib;expat.lib;geos_c.lib;json-c.lib;libxml2.lib;geos_c.lib;proj.lib;psapi.lib;proj.lib;json-c.lib;libiconv.lib;legacy_stdio_definitions.lib;odbccp32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(JSON_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CRYPTOPP_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ZSTD_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LIBLZMA_DIR)\windows\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(DEFLATE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LZ4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(BLOSC_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64;..\..\$(PROJ_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(QHULL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(EXPAT_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(XERCES_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(LERC_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GIF_DIR)\build.vc11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(NETCDF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SPATIALITE_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(ICONV_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdal.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\gcore\gdal.h" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_alibaba_oss.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_azure.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_conv.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_error.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_string.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cplgetsymbol.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cplstringlist.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_strtod.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_path.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_csv.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_findfile.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_minixml.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_multiproc.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_list.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_getexecpath.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cplstring.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsisimple.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsi_mem.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_http.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_hash_set.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cplkeywordparser.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_recode.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_recode_stub.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_quad_tree.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_atomic_ops.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_subfile.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_time.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_stdout.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_sparsefile.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_abstract_archive.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_tar.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_stdin.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_buffered_reader.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_plugin.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_base64.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_curl.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_curl_streaming.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_cache.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_xml_validate.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_spawn.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_google_oauth2.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_progress.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_virtualmem.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_worker_thread_pool.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_crypt.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_sha1.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_sha256.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_aws.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_aws_win32.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsi_error.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_cpu_features.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_google_cloud.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_json.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_json_streaming_parser.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_md5.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_hdfs.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_swift.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_adls.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_az.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_uploadonclose.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_gs.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_webhdfs.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_s3.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_oss.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_swift.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_json_streaming_writer.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_userfaultfd.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vax.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_compressor.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_float.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_win32.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_vsil_gzip.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_minizip_ioapi.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_minizip_unzip.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_minizip_zip.obj" />
+    <Object Include=".\port\cpl.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_odbc.obj" />
+    <Object Include=".\port\cpl_iconv.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpl_recode_iconv.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\contour.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\delaunay.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdal_crs.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdal_octave.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdal_rpc.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdal_tps.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalapplyverticalshiftgrid.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalchecksum.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalcutline.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaldither.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalgeoloc.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalgeolocquadtree.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalgrid.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdallinearsystem.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalmatching.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalmediancut.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalpansharpen.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalproximity.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalrasterize.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalrasterpolygonenumerator.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalsievefilter.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalsimplewarp.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaltransformer.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaltransformgeolocs.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalwarper.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalwarpkernel.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalwarpoperation.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\llrasterize.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\polygonize.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rasterfill.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\thinplatespline.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdal_simplesurf.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\viewshed.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalwarpkernel_opencl.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalgridsse.obj" />
+    <Object Include=".\alg\alg.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalgridavx.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeometryfactory.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpoint.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrcurve.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrlinestring.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrlinearring.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpolygon.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrtriangle.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrutils.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeometry.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeometrycollection.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrmultipolygon.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsurface.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpolyhedralsurface.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrtriangulatedsurface.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrmultipoint.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrmultilinestring.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrcircularstring.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrcompoundcurve.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrcurvepolygon.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrcurvecollection.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrmulticurve.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrmultisurface.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_api.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrfeature.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrfeaturedefn.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrfeaturequery.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrfeaturestyle.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrfielddefn.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrspatialreference.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_srsnode.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_fromepsg.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrct.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_srs_esri.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_srs_pci.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_srs_usgs.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_srs_dict.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_srs_panorama.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_srs_ozi.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_srs_erm.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\swq.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\swq_expr_node.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\swq_parser.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\swq_select.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\swq_op_registrar.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\swq_op_general.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_srs_xml.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ograssemblepolygon.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr2gmlgeometry.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gml2ogrgeometry.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_expat.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpgeogeometry.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_geocoding.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeomfielddefn.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ograpispy.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_xerces.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_geo_utils.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_proj_p.obj" />
+    <Object Include=".\ogr\ogr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_wkb.obj" />
+    <Object Include=".\frmts\iso8211\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfmodule.obj" />
+    <Object Include=".\frmts\iso8211\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfutils.obj" />
+    <Object Include=".\frmts\iso8211\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddffielddefn.obj" />
+    <Object Include=".\frmts\iso8211\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfrecord.obj" />
+    <Object Include=".\frmts\iso8211\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddffield.obj" />
+    <Object Include=".\frmts\iso8211\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfsubfielddefn.obj" />
+    <Object Include=".\frmts\jpeg\gdal_JPEG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vsidataio.obj" />
+    <Object Include=".\frmts\jpeg\gdal_JPEG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\jpgdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ace2dataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\atlsci_spheroid.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\btdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cpgdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ctable2dataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dipxdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\doq1dataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\doq2dataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ehdrdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\eirdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\envidataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\fastdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\genbindataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gscdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gtxdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hkvdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\krodataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\iscedataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\landataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\lcpdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\loslasdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mffdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ndfdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ntv2dataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pauxdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pnmdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\roipacdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rrasterdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\snodasdataset.obj" />
+    <Object Include=".\frmts\raw\gdal_raw.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\byndataset.obj" />
+    <Object Include=".\frmts\gtiff\gdal_GTIFF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cogdriver.obj" />
+    <Object Include=".\frmts\gtiff\gdal_GTIFF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\geotiff.obj" />
+    <Object Include=".\frmts\gtiff\gdal_GTIFF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gt_jpeg_copy.obj" />
+    <Object Include=".\frmts\gtiff\gdal_GTIFF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gt_citation.obj" />
+    <Object Include=".\frmts\gtiff\gdal_GTIFF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gt_overview.obj" />
+    <Object Include=".\frmts\gtiff\gdal_GTIFF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gt_wkt_srs.obj" />
+    <Object Include=".\frmts\gtiff\gdal_GTIFF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tifvsi.obj" />
+    <Object Include=".\frmts\mem\gdal_MEM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\memdataset.obj" />
+    <Object Include=".\frmts\vrt\gdal_vrt.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vrtderivedrasterband.obj" />
+    <Object Include=".\frmts\vrt\gdal_vrt.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vrtdriver.obj" />
+    <Object Include=".\frmts\vrt\gdal_vrt.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vrtfilters.obj" />
+    <Object Include=".\frmts\vrt\gdal_vrt.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vrtrasterband.obj" />
+    <Object Include=".\frmts\vrt\gdal_vrt.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vrtrawrasterband.obj" />
+    <Object Include=".\frmts\vrt\gdal_vrt.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vrtsourcedrasterband.obj" />
+    <Object Include=".\frmts\vrt\gdal_vrt.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vrtsources.obj" />
+    <Object Include=".\frmts\vrt\gdal_vrt.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vrtwarped.obj" />
+    <Object Include=".\frmts\vrt\gdal_vrt.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vrtdataset.obj" />
+    <Object Include=".\frmts\vrt\gdal_vrt.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pixelfunctions.obj" />
+    <Object Include=".\frmts\vrt\gdal_vrt.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vrtpansharpened.obj" />
+    <Object Include=".\frmts\vrt\gdal_vrt.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vrtmultidim.obj" />
+    <Object Include=".\frmts\derived\gdal_Derived.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\deriveddataset.obj" />
+    <Object Include=".\frmts\derived\gdal_Derived.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\derivedlist.obj" />
+    <Object Include=".\frmts\hfa\gdal_HFA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hfaband.obj" />
+    <Object Include=".\frmts\hfa\gdal_HFA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hfacompress.obj" />
+    <Object Include=".\frmts\hfa\gdal_HFA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hfadataset.obj" />
+    <Object Include=".\frmts\hfa\gdal_HFA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hfadictionary.obj" />
+    <Object Include=".\frmts\hfa\gdal_HFA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hfaentry.obj" />
+    <Object Include=".\frmts\hfa\gdal_HFA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hfafield.obj" />
+    <Object Include=".\frmts\hfa\gdal_HFA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hfaopen.obj" />
+    <Object Include=".\frmts\hfa\gdal_HFA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hfatype.obj" />
+    <Object Include=".\frmts\hfa\gdal_HFA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hfa_overviews.obj" />
+    <Object Include=".\frmts\sdts\gdal_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sdtsiref.obj" />
+    <Object Include=".\frmts\sdts\gdal_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sdtscatd.obj" />
+    <Object Include=".\frmts\sdts\gdal_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sdtslinereader.obj" />
+    <Object Include=".\frmts\sdts\gdal_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sdtslib.obj" />
+    <Object Include=".\frmts\sdts\gdal_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sdtspointreader.obj" />
+    <Object Include=".\frmts\sdts\gdal_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sdtsattrreader.obj" />
+    <Object Include=".\frmts\sdts\gdal_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sdtstransfer.obj" />
+    <Object Include=".\frmts\sdts\gdal_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sdtspolygonreader.obj" />
+    <Object Include=".\frmts\sdts\gdal_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sdtsxref.obj" />
+    <Object Include=".\frmts\sdts\gdal_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sdtsrasterreader.obj" />
+    <Object Include=".\frmts\sdts\gdal_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sdtsindexedreader.obj" />
+    <Object Include=".\frmts\sdts\gdal_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sdtsdataset.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mgrs.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nitfdataset.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rpftocdataset.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nitfrasterband.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ecrgtocdataset.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nitffile.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nitfimage.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nitfaridpcm.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nitfbilevel.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rpftocfile.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nitfdes.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nitf_gcprpc.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nitfwritejpeg.obj" />
+    <Object Include=".\frmts\nitf\gdal_NITF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nitfwritejpeg_12.obj" />
+    <Object Include=".\frmts\gxf\gdal_GXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gxf_ogcwkt.obj" />
+    <Object Include=".\frmts\gxf\gdal_GXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gxf_proj4.obj" />
+    <Object Include=".\frmts\gxf\gdal_GXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gxfdataset.obj" />
+    <Object Include=".\frmts\gxf\gdal_GXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gxfopen.obj" />
+    <Object Include=".\frmts\ceos\gdal_CEOS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ceosdataset.obj" />
+    <Object Include=".\frmts\ceos\gdal_CEOS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ceosopen.obj" />
+    <Object Include=".\frmts\ceos2\gdal_SAR_CEOS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ceos.obj" />
+    <Object Include=".\frmts\ceos2\gdal_SAR_CEOS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ceosrecipe.obj" />
+    <Object Include=".\frmts\ceos2\gdal_SAR_CEOS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ceossar.obj" />
+    <Object Include=".\frmts\ceos2\gdal_SAR_CEOS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\link.obj" />
+    <Object Include=".\frmts\ceos2\gdal_SAR_CEOS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sar_ceosdataset.obj" />
+    <Object Include=".\frmts\xpm\gdal_XPM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\xpmdataset.obj" />
+    <Object Include=".\frmts\dted\gdal_DTED.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dted_api.obj" />
+    <Object Include=".\frmts\dted\gdal_DTED.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dted_create.obj" />
+    <Object Include=".\frmts\dted\gdal_DTED.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dted_ptstream.obj" />
+    <Object Include=".\frmts\dted\gdal_DTED.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dteddataset.obj" />
+    <Object Include=".\frmts\jdem\gdal_JDEM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\jdemdataset.obj" />
+    <Object Include=".\frmts\envisat\gdal_Envisat.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\EnvisatFile.obj" />
+    <Object Include=".\frmts\envisat\gdal_Envisat.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\records.obj" />
+    <Object Include=".\frmts\envisat\gdal_Envisat.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\adsrange.obj" />
+    <Object Include=".\frmts\envisat\gdal_Envisat.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\unwrapgcps.obj" />
+    <Object Include=".\frmts\envisat\gdal_Envisat.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\envisatdataset.obj" />
+    <Object Include=".\frmts\elas\gdal_ELAS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\elasdataset.obj" />
+    <Object Include=".\frmts\fit\gdal_FIT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\fit.obj" />
+    <Object Include=".\frmts\fit\gdal_FIT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\fitdataset.obj" />
+    <Object Include=".\frmts\l1b\gdal_L1B.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\l1bdataset.obj" />
+    <Object Include=".\frmts\rs2\gdal_RS2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rs2dataset.obj" />
+    <Object Include=".\frmts\ilwis\gdal_ILWIS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ilwisdataset.obj" />
+    <Object Include=".\frmts\ilwis\gdal_ILWIS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ilwiscoordinatesystem.obj" />
+    <Object Include=".\frmts\rmf\gdal_RMF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rmfdataset.obj" />
+    <Object Include=".\frmts\rmf\gdal_RMF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rmfdem.obj" />
+    <Object Include=".\frmts\rmf\gdal_RMF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rmflzw.obj" />
+    <Object Include=".\frmts\rmf\gdal_RMF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rmfjpeg.obj" />
+    <Object Include=".\frmts\leveller\gdal_Leveller.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\levellerdataset.obj" />
+    <Object Include=".\frmts\sgi\gdal_SGI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sgidataset.obj" />
+    <Object Include=".\frmts\srtmhgt\gdal_SRTMHGT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\srtmhgtdataset.obj" />
+    <Object Include=".\frmts\idrisi\gdal_IDRISI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\IdrisiDataset.obj" />
+    <Object Include=".\frmts\gsg\gdal_GSG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gs7bgdataset.obj" />
+    <Object Include=".\frmts\gsg\gdal_GSG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gsagdataset.obj" />
+    <Object Include=".\frmts\gsg\gdal_GSG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gsbgdataset.obj" />
+    <Object Include=".\frmts\ers\gdal_ERS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ersdataset.obj" />
+    <Object Include=".\frmts\ers\gdal_ERS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ershdrnode.obj" />
+    <Object Include=".\frmts\jaxapalsar\gdal_PALSARJaxa.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\jaxapalsardataset.obj" />
+    <Object Include=".\frmts\dimap\gdal_DIMAP.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dimapdataset.obj" />
+    <Object Include=".\frmts\gff\gdal_GFF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gff_dataset.obj" />
+    <Object Include=".\frmts\cosar\gdal_COSAR.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cosar_dataset.obj" />
+    <Object Include=".\frmts\pds\gdal_PDS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\isis2dataset.obj" />
+    <Object Include=".\frmts\pds\gdal_PDS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\isis3dataset.obj" />
+    <Object Include=".\frmts\pds\gdal_PDS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pdsdataset.obj" />
+    <Object Include=".\frmts\pds\gdal_PDS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pds4dataset.obj" />
+    <Object Include=".\frmts\pds\gdal_PDS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pds4vector.obj" />
+    <Object Include=".\frmts\pds\gdal_PDS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vicardataset.obj" />
+    <Object Include=".\frmts\pds\gdal_PDS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vicarkeywordhandler.obj" />
+    <Object Include=".\frmts\adrg\gdal_ADRG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\adrgdataset.obj" />
+    <Object Include=".\frmts\adrg\gdal_ADRG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\srpdataset.obj" />
+    <Object Include=".\frmts\coasp\gdal_COASP.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\coasp_dataset.obj" />
+    <Object Include=".\frmts\tsx\gdal_TSX.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tsxdataset.obj" />
+    <Object Include=".\frmts\terragen\gdal_Terragen.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\terragendataset.obj" />
+    <Object Include=".\frmts\blx\gdal_BLX.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\blx.obj" />
+    <Object Include=".\frmts\blx\gdal_BLX.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\blxdataset.obj" />
+    <Object Include=".\frmts\msgn\gdal_MSGN.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\msg_basic_types.obj" />
+    <Object Include=".\frmts\msgn\gdal_MSGN.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\msg_reader_core.obj" />
+    <Object Include=".\frmts\msgn\gdal_MSGN.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\msgndataset.obj" />
+    <Object Include=".\frmts\til\gdal_TIL.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tildataset.obj" />
+    <Object Include=".\frmts\r\gdal_R.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rcreatecopy.obj" />
+    <Object Include=".\frmts\r\gdal_R.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rdataset.obj" />
+    <Object Include=".\frmts\northwood\gdal_northwood.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\grddataset.obj" />
+    <Object Include=".\frmts\northwood\gdal_northwood.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\grcdataset.obj" />
+    <Object Include=".\frmts\northwood\gdal_northwood.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\northwood.obj" />
+    <Object Include=".\frmts\saga\gdal_SAGA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sagadataset.obj" />
+    <Object Include=".\frmts\xyz\gdal_XYZ.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\xyzdataset.obj" />
+    <Object Include=".\frmts\esric\gdal_ESRIC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\esric_dataset.obj" />
+    <Object Include=".\frmts\hf2\gdal_HF2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hf2dataset.obj" />
+    <Object Include=".\frmts\kmlsuperoverlay\gdal_KMLSUPEROVERLAY.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\kmlsuperoverlaydataset.obj" />
+    <Object Include=".\frmts\ctg\gdal_CTG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ctgdataset.obj" />
+    <Object Include=".\frmts\zmap\gdal_ZMap.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zmapdataset.obj" />
+    <Object Include=".\frmts\ngsgeoid\gdal_NGSGEOID.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ngsgeoiddataset.obj" />
+    <Object Include=".\frmts\iris\gdal_IRIS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\irisdataset.obj" />
+    <Object Include=".\frmts\map\gdal_MAP.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mapdataset.obj" />
+    <Object Include=".\frmts\cals\gdal_CALS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\calsdataset.obj" />
+    <Object Include=".\frmts\safe\gdal_SAFE.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\safedataset.obj" />
+    <Object Include=".\frmts\sentinel2\gdal_SENTINEL2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sentinel2dataset.obj" />
+    <Object Include=".\frmts\prf\gdal_PRF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\phprfdataset.obj" />
+    <Object Include=".\frmts\mrf\gdal_MRF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\marfa_dataset.obj" />
+    <Object Include=".\frmts\mrf\gdal_MRF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mrf_band.obj" />
+    <Object Include=".\frmts\mrf\gdal_MRF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mrf_overview.obj" />
+    <Object Include=".\frmts\mrf\gdal_MRF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mrf_util.obj" />
+    <Object Include=".\frmts\mrf\gdal_MRF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\Packer_RLE.obj" />
+    <Object Include=".\frmts\mrf\gdal_MRF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\Tif_band.obj" />
+    <Object Include=".\frmts\mrf\gdal_MRF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\JPEG_band.obj" />
+    <Object Include=".\frmts\mrf\gdal_MRF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\PNG_band.obj" />
+    <Object Include=".\frmts\mrf\gdal_MRF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\JPNG_band.obj" />
+    <Object Include=".\frmts\mrf\gdal_MRF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\LERC_band.obj" />
+    <Object Include=".\frmts\mrf\LERCV1\liblercv1.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\Lerc1Image.obj" />
+    <Object Include=".\frmts\wmts\gdal_WMTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\wmtsdataset.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gribdataset.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gribcreatecopy.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\clock.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\degrib1.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\degrib2.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\inventory.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\metaname.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\myerror.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\grib1tab.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\myutil.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\metaparse.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\weather.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\metaprint.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\grib2api.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\myassert.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\scan.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tendian.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gridtemplates.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\drstemplates.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pdstemplates.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gbits.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\g2_free.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\g2_unpack1.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\g2_unpack2.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\g2_unpack3.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\g2_unpack4.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\g2_unpack5.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\g2_unpack6.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\g2_unpack7.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\g2_info.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\g2_getfld.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\simunpack.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\comunpack.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pack_gp.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reduce.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\specunpack.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rdieee.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mkieee.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\int_power.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\simpack.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\compack.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cmplxpack.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\misspack.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dec_jpeg2000.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\jpcunpack.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hazard.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pngunpack.obj" />
+    <Object Include=".\frmts\grib\gdal_GRIB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dec_png.obj" />
+    <Object Include=".\frmts\bmp\gdal_BMP.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\bmpdataset.obj" />
+    <Object Include=".\frmts\tga\gdal_TGA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tgadataset.obj" />
+    <Object Include=".\frmts\stacta\gdal_STACTA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\stactadataset.obj" />
+    <Object Include=".\frmts\ogcapi\gdal_OGCAPI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalogcapidataset.obj" />
+    <Object Include=".\frmts\aigrid\gdal_AIGrid.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\aigccitt.obj" />
+    <Object Include=".\frmts\aigrid\gdal_AIGrid.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\aigdataset.obj" />
+    <Object Include=".\frmts\aigrid\gdal_AIGrid.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\aigopen.obj" />
+    <Object Include=".\frmts\aigrid\gdal_AIGrid.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gridlib.obj" />
+    <Object Include=".\frmts\arg\gdal_ARG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\argdataset.obj" />
+    <Object Include=".\frmts\usgsdem\gdal_USGSDEM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\usgsdem_create.obj" />
+    <Object Include=".\frmts\usgsdem\gdal_USGSDEM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\usgsdemdataset.obj" />
+    <Object Include=".\frmts\ozi\gdal_OZI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ozidataset.obj" />
+    <Object Include=".\frmts\sigdem\gdal_SIGDEM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sigdemdataset.obj" />
+    <Object Include=".\frmts\rik\gdal_RIK.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rikdataset.obj" />
+    <Object Include=".\frmts\stacit\gdal_STACIT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\stacitdataset.obj" />
+    <Object Include=".\frmts\gif\gdal_GIF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gifabstractdataset.obj" />
+    <Object Include=".\frmts\gif\gdal_GIF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\biggifdataset.obj" />
+    <Object Include=".\frmts\gif\gdal_GIF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gifdataset.obj" />
+    <Object Include=".\frmts\wcs\gdal_WCS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gmlcoverage.obj" />
+    <Object Include=".\frmts\wcs\gdal_WCS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\wcsdataset.obj" />
+    <Object Include=".\frmts\wcs\gdal_WCS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\wcsdataset100.obj" />
+    <Object Include=".\frmts\wcs\gdal_WCS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\wcsdataset110.obj" />
+    <Object Include=".\frmts\wcs\gdal_WCS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\wcsdataset201.obj" />
+    <Object Include=".\frmts\wcs\gdal_WCS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\wcsrasterband.obj" />
+    <Object Include=".\frmts\wcs\gdal_WCS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\wcsutils.obj" />
+    <Object Include=".\frmts\wcs\gdal_HTTP.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\httpdriver.obj" />
+    <Object Include=".\frmts\netcdf\gdal_netCDF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\netcdfdataset.obj" />
+    <Object Include=".\frmts\netcdf\gdal_netCDF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\netcdflayer.obj" />
+    <Object Include=".\frmts\netcdf\gdal_netCDF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\netcdfwriterconfig.obj" />
+    <Object Include=".\frmts\netcdf\gdal_netCDF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\netcdfsg.obj" />
+    <Object Include=".\frmts\netcdf\gdal_netCDF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\netcdflayersg.obj" />
+    <Object Include=".\frmts\netcdf\gdal_netCDF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\netcdfsgwriterutil.obj" />
+    <Object Include=".\frmts\netcdf\gdal_netCDF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\netcdfmultidim.obj" />
+    <Object Include=".\frmts\netcdf\gdal_netCDF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\netcdfvirtual.obj" />
+    <Object Include=".\frmts\netcdf\gdal_netCDF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\netcdf_sentinel3_sral_mwr.obj" />
+    <Object Include=".\frmts\zarr\gdal_Zarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zarr_array.obj" />
+    <Object Include=".\frmts\zarr\gdal_Zarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zarr_attribute.obj" />
+    <Object Include=".\frmts\zarr\gdal_Zarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zarr_group.obj" />
+    <Object Include=".\frmts\zarr\gdal_Zarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zarrdriver.obj" />
+    <Object Include=".\frmts\daas\gdal_DAAS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\daasdataset.obj" />
+    <Object Include=".\frmts\eeda\gdal_EEDA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\eedaidataset.obj" />
+    <Object Include=".\frmts\eeda\gdal_EEDA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\eedadataset.obj" />
+    <Object Include=".\frmts\eeda\gdal_EEDA.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\eedacommon.obj" />
+    <Object Include=".\frmts\plmosaic\gdal_PLMOSAIC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\plmosaicdataset.obj" />
+    <Object Include=".\frmts\rasterlite\gdal_Rasterlite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rasterlitecreatecopy.obj" />
+    <Object Include=".\frmts\rasterlite\gdal_Rasterlite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rasterlitedataset.obj" />
+    <Object Include=".\frmts\rasterlite\gdal_Rasterlite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rasterliteoverviews.obj" />
+    <Object Include=".\frmts\mbtiles\gdal_MBTiles.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mbtilesdataset.obj" />
+    <Object Include=".\frmts\gdal_frmts.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalallregister.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ogrsf_frmts.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrregisterall.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mem\ogr_MEM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrmemdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mem\ogr_MEM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrmemdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mem\ogr_MEM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrmemlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geojson\ogr_geojson.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeojsondatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geojson\ogr_geojson.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeojsonlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geojson\ogr_geojson.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeojsonreader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geojson\ogr_geojson.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeojsonutils.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geojson\ogr_geojson.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeojsonwritelayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geojson\ogr_geojson.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeojsonwriter.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geojson\ogr_geojson.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeojsondriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geojson\ogr_geojson.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeojsonseqdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geojson\ogr_geojson.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogresrijsonreader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geojson\ogr_geojson.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogresrijsondriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geojson\ogr_geojson.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrtopojsonreader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geojson\ogr_geojson.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrtopojsondriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_rawbinblock.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_mapheaderblock.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_mapindexblock.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_mapobjectblock.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_mapcoordblock.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_feature.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_feature_mif.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_mapfile.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_idfile.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_datfile.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_tabfile.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_miffile.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_utils.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_imapinfofile.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_middatafile.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_bounds.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_maptoolblock.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_tooldef.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_coordsys.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_spatialref.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_ogr_driver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_indfile.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_tabview.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_ogr_datasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_geometry.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mitab\ogr_TAB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mitab_tabseamless.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\shape\ogr_Shape.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\shape2ogr.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\shape\ogr_Shape.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\shp_vsi.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\shape\ogr_Shape.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrshapedatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\shape\ogr_Shape.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrshapedriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\shape\ogr_Shape.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrshapelayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\shape\shapelib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\sbnsearch_wrapper.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\shape\shapelib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\shpopen_wrapper.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\shape\shapelib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\shptree_wrapper.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\shape\shapelib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dbfopen_wrapper.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\kml\ogr_KML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrkmldriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\kml\ogr_KML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr2kmlgeometry.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\kml\ogr_KML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrkmldatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\kml\ogr_KML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrkmllayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\kml\ogr_KML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\kml.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\kml\ogr_KML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\kmlnode.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\kml\ogr_KML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\kmlvector.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\vrt\ogr_VRT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrvrtdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\vrt\ogr_VRT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrvrtdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\vrt\ogr_VRT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrvrtlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_bin.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_rawbin.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_e00gen.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_e00parse.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_e00read.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_mbyte.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\avc_misc.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravcbindatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravcbindriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravcbinlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravce00datasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravcdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravce00driver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravce00layer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\avc\ogr_AVC.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogravclayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gfstemplate.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gmlpropertydefn.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gmlreadstate.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgmldriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\resolvexlinks.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gmlfeature.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gmlreader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gmlregistry.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hugefileresolver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgmllayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gmlfeatureclass.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\parsexsd.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gmlhandler.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gmlutils.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gml\ogr_GML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgmldatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\csv\ogr_CSV.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrcsvdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\csv\ogr_CSV.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrcsvdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\csv\ogr_CSV.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrcsvlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dgn\ogr_DGN.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dgnhelp.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dgn\ogr_DGN.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dgnopen.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dgn\ogr_DGN.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dgnread.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dgn\ogr_DGN.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dgnwrite.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dgn\ogr_DGN.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dgnstroke.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dgn\ogr_DGN.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdgndriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dgn\ogr_DGN.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdgnlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dgn\ogr_DGN.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdgndatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gmt\ogr_GMT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgmtdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gmt\ogr_GMT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgmtdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gmt\ogr_GMT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgmtlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ntf\ogr_NTF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ntffilereader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ntf\ogr_NTF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ntfrecord.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ntf\ogr_NTF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrntfdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ntf\ogr_NTF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrntfdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ntf\ogr_NTF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrntflayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ntf\ogr_NTF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ntf_estlayers.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ntf\ogr_NTF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrntffeatureclasslayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ntf\ogr_NTF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ntf_generic.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ntf\ogr_NTF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ntf_raster.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ntf\ogr_NTF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ntf_codelist.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ntf\ogr_NTF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ntfstroke.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\s57\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrs57driver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\s57\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrs57datasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\s57\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrs57layer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\s57\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\s57classregistrar.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\s57\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\s57reader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\s57\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfrecordindex.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\s57\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\s57featuredefns.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\s57\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\s57filecollector.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\s57\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\s57writer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerarealandmarks.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigeridhistory.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerpoint.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerspatialmetadata.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrtigerdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigercompletechain.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerkeyfeatures.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerpolychainlink.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigertlidrange.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrtigerdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerentitynames.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerlandmarks.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerpolygon.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerzerocellid.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrtigerlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerfeatureids.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigeroverunder.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerpolygoncorrections.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerzipcodes.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigeraltname.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerfilebase.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerpip.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerpolygoneconomic.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\tiger\ogr_Tiger.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tigerzipplus4.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geoconcept\ogr_Geoconcept.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeoconceptdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geoconcept\ogr_Geoconcept.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeoconceptdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geoconcept\ogr_Geoconcept.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeoconceptlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geoconcept\ogr_Geoconcept.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\geoconcept.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\geoconcept\ogr_Geoconcept.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\geoconcept_syscoord.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\georss\ogr_GeoRSS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeorssdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\georss\ogr_GeoRSS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeorssdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\georss\ogr_GeoRSS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeorsslayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\intronurbs.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxfblockswriterlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxf_feature.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxf_polyline_smooth.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_autocad_services.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxfdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxf_hatch.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxfreader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxf_blockmap.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxf_dimension.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxflayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxfwriterds.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxfblockslayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxfdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxf_leader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxfwriterlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\dxf\ogr_DXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdxf_ocstransformer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\pgdump\ogr_PGDump.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpgdumpdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\pgdump\ogr_PGDump.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpgdumpdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\pgdump\ogr_PGDump.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpgdumplayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpsbabel\ogr_GPSBabel.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgpsbabeldatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpsbabel\ogr_GPSBabel.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgpsbabeldriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpsbabel\ogr_GPSBabel.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgpsbabelwritedatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\edigeo\ogr_EDIGEO.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogredigeodatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\edigeo\ogr_EDIGEO.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogredigeodriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\edigeo\ogr_EDIGEO.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogredigeolayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sxf\ogr_SXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsxfdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sxf\ogr_SXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsxflayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sxf\ogr_SXF.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsxfdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\openfilegdb\ogr_OpenFileGDB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\filegdbindex.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\openfilegdb\ogr_OpenFileGDB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\filegdbindex_write.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\openfilegdb\ogr_OpenFileGDB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\filegdbtable.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\openfilegdb\ogr_OpenFileGDB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\filegdbtable_write.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\openfilegdb\ogr_OpenFileGDB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\filegdbtable_write_fields.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\openfilegdb\ogr_OpenFileGDB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\filegdbtable_freelist.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\openfilegdb\ogr_OpenFileGDB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogropenfilegdbdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\openfilegdb\ogr_OpenFileGDB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogropenfilegdbdatasource_write.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\openfilegdb\ogr_OpenFileGDB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogropenfilegdbdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\openfilegdb\ogr_OpenFileGDB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogropenfilegdblayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\openfilegdb\ogr_OpenFileGDB.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogropenfilegdblayer_write.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\selafin\ogr_Selafin.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\io_selafin.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\selafin\ogr_Selafin.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrselafindatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\selafin\ogr_Selafin.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrselafindriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\selafin\ogr_Selafin.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrselafinlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\jml\ogr_JML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrjmldataset.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\jml\ogr_JML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrjmllayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\jml\ogr_JML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrjmlwriterlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\vdv\ogr_VDV.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrvdvdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\flatgeobuf\ogr_FlatGeobuf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrflatgeobufdataset.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\flatgeobuf\ogr_FlatGeobuf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrflatgeobuflayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\flatgeobuf\ogr_FlatGeobuf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\packedrtree.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\flatgeobuf\ogr_FlatGeobuf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\geometryreader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\flatgeobuf\ogr_FlatGeobuf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\geometrywriter.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\flatgeobuf\ogr_FlatGeobuf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrflatgeobufeditablelayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mapml\ogr_MapML.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrmapmldataset.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sdts\ogr_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsdtsdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sdts\ogr_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsdtsdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sdts\ogr_SDTS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsdtslayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpx\ogr_GPX.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgpxdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpx\ogr_GPX.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgpxdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpx\ogr_GPX.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgpxlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\svg\ogr_SVG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsvgdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\svg\ogr_SVG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsvgdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\svg\ogr_SVG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsvglayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\csw\ogr_CSW.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrcswdataset.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\nas\ogr_NAS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nashandler.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\nas\ogr_NAS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nasreader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\nas\ogr_NAS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrnasdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\nas\ogr_NAS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrnasdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\nas\ogr_NAS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrnaslayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\nas\ogr_NAS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrnasrelationlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\wfs\ogr_WFS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrwfsdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\wfs\ogr_WFS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrwfsdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\wfs\ogr_WFS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrwfsfilter.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\wfs\ogr_WFS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrwfsjoinlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\wfs\ogr_WFS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrwfslayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\wfs\ogr_WFS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogroapifdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ngw\ogr_NGW.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrngwdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ngw\ogr_NGW.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrngwlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ngw\ogr_NGW.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ngw_api.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ngw\ogr_NGW.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalngwdataset.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\idrisi\ogr_Idrisi.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogridrisidatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\idrisi\ogr_Idrisi.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogridrisidriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\idrisi\ogr_Idrisi.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogridrisilayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\pds\ogr_PDS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpdsdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\pds\ogr_PDS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpdsdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\pds\ogr_PDS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpdslayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsqlitedatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsqlitedriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsqlitelayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsqliteselectlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsqlitesinglefeaturelayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsqlitetablelayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsqlitevfs.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsqliteviewlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsqliteexecutesql.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsqlitevirtualogr.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsqliteutility.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsqliteapiroutines.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\sqlite\ogr_SQLite.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rasterlite2.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpkg\ogr_GeoPackage.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeopackagedatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpkg\ogr_GeoPackage.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeopackagedriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpkg\ogr_GeoPackage.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeopackagelayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpkg\ogr_GeoPackage.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeopackageselectlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpkg\ogr_GeoPackage.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeopackagetablelayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpkg\ogr_GeoPackage.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrgeopackageutility.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\gpkg\ogr_GeoPackage.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalgeopackagerasterband.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\osm\ogr_OSM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrosmdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\osm\ogr_OSM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrosmdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\osm\ogr_OSM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrosmlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\osm\ogr_OSM.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osm_parser.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mvt\ogr_MVT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mvt_tile.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mvt\ogr_MVT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mvtutils.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\mvt\ogr_MVT.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrmvtdataset.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\amigocloud\ogr_AmigoCloud.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogramigoclouddatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\amigocloud\ogr_AmigoCloud.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogramigoclouddriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\amigocloud\ogr_AmigoCloud.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogramigocloudlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\amigocloud\ogr_AmigoCloud.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogramigocloudresultlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\amigocloud\ogr_AmigoCloud.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogramigocloudtablelayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ili\ogr_ILI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ili1reader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ili\ogr_ILI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrili1driver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ili\ogr_ILI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrili1layer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ili\ogr_ILI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrili1datasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ili\ogr_ILI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ili2handler.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ili\ogr_ILI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrili2driver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ili\ogr_ILI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ili2reader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ili\ogr_ILI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrili2layer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ili\ogr_ILI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrili2datasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ili\ogr_ILI.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\imdreader.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\pgeo\ogr_PGeo.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpgeodatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\pgeo\ogr_PGeo.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpgeodriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\pgeo\ogr_PGeo.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpgeolayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\pgeo\ogr_PGeo.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpgeotablelayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\pgeo\ogr_PGeo.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrpgeoselectlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\xlsx\ogr_XLSX.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrxlsxdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\xlsx\ogr_XLSX.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrxlsxdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ods\ogr_ODS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ods_formula_node.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ods\ogr_ODS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ods_formula.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ods\ogr_ODS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrodsdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\ods\ogr_ODS.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrodsdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\lvbag\ogr_LVBAG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrlvbagdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\lvbag\ogr_LVBAG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrlvbagdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\lvbag\ogr_LVBAG.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrlvbaglayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsfdriverregistrar.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrdatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrsfdriver.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_gensql.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_attrind.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr_miattrind.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrwarpedlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrunionlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrlayerpool.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrlayerdecorator.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogreditablelayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogremulatedtransaction.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrmutexeddatasource.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrmutexedlayer.obj" />
+    <Object Include=".\ogr\ogrsf_frmts\generic\ogrsf_generic.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ograrrowarrayhelper.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalopeninfo.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaldriver.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaldrivermanager.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaldataset.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalrasterband.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdal_misc.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalrasterblock.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalcolortable.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalmajorobject.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaldefaultoverviews.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalpamdataset.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalpamrasterband.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaljp2metadata.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaljp2box.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalmultidomainmetadata.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdal_rat.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalpamproxydb.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalallvalidmaskband.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalnodatamaskband.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalnodatavaluesmaskband.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalproxydataset.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalproxypool.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaldefaultasync.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaldllmain.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalexif.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalgeorefpamdataset.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaljp2abstractdataset.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalvirtualmem.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaloverviewdataset.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalrescaledalphaband.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaljp2structure.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdal_mdreader.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaljp2metadatagenerator.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalabstractbandblockcache.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalarraybandblockcache.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalhashsetbandblockcache.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalrelationship.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\overview.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rasterio.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rawdataset.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalmultidim.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalpython.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalpythondriverloader.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tilematrixset.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdal_thread_pool.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nasakeywordhandler.obj" />
+    <Object Include=".\gcore\gcore.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rasterio_ssse3.obj" />
+    <Object Include=".\gcore\mdreader\gcore_mdreader.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reader_alos.obj" />
+    <Object Include=".\gcore\mdreader\gcore_mdreader.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reader_digital_globe.obj" />
+    <Object Include=".\gcore\mdreader\gcore_mdreader.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reader_eros.obj" />
+    <Object Include=".\gcore\mdreader\gcore_mdreader.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reader_geo_eye.obj" />
+    <Object Include=".\gcore\mdreader\gcore_mdreader.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reader_kompsat.obj" />
+    <Object Include=".\gcore\mdreader\gcore_mdreader.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reader_landsat.obj" />
+    <Object Include=".\gcore\mdreader\gcore_mdreader.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reader_orb_view.obj" />
+    <Object Include=".\gcore\mdreader\gcore_mdreader.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reader_pleiades.obj" />
+    <Object Include=".\gcore\mdreader\gcore_mdreader.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reader_rapid_eye.obj" />
+    <Object Include=".\gcore\mdreader\gcore_mdreader.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reader_rdk1.obj" />
+    <Object Include=".\gcore\mdreader\gcore_mdreader.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reader_spot.obj" />
+    <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalinfo_lib.obj" />
+    <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalbuildvrt_lib.obj" />
+    <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdal_grid_lib.obj" />
+    <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdal_translate_lib.obj" />
+    <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdal_rasterize_lib.obj" />
+    <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalwarp_lib.obj" />
+    <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\commonutils.obj" />
+    <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogr2ogr_lib.obj" />
+    <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdaldem_lib.obj" />
+    <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nearblack_lib.obj" />
+    <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalmdiminfo_lib.obj" />
+    <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalmdimtranslate_lib.obj" />
+    <ResourceCompile Include="..\gcore\Version.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

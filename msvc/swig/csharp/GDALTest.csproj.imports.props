@@ -1,0 +1,7 @@
+<Project>
+    <PropertyGroup>
+        <OutDir>N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALTest/</OutDir>
+        <DOTNET_PACKAGE_VERSION>3.6.4</DOTNET_PACKAGE_VERSION>
+        
+    </PropertyGroup>
+</Project>

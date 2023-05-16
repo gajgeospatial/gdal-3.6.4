@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/GNUInstallDirs.cmake
+N:/Development/Dev_Base/gdal-3.6.4/scripts/CMakeLists.txt
+N:/Development/Dev_Base/gdal-3.6.4/scripts/install_bash_completions.cmake.in

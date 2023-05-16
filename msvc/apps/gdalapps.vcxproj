@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{53734847-F777-3CA0-BE19-2F3F325EB8C2}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gdalapps</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\9b255195ea51481f4c45455d4e26c4c9\gdalapps.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\Debug\gdalinfo.exe;.\Debug\gdalbuildvrt.exe;.\Debug\gdaladdo.exe;.\Debug\gdal_grid.exe;.\Debug\gdal_translate.exe;.\Debug\gdal_rasterize.exe;.\Debug\gdalsrsinfo.exe;.\Debug\gdalenhance.exe;.\Debug\gdalmanage.exe;.\Debug\gdaltransform.exe;.\Debug\gdaltindex.exe;.\Debug\gdaldem.exe;.\Debug\gdal_create.exe;.\Debug\gdal_viewshed.exe;.\Debug\nearblack.exe;.\Debug\ogrlineref.exe;.\Debug\ogrtindex.exe;.\Debug\gdalwarp.exe;.\Debug\gdal_contour.exe;.\Debug\gdallocationinfo.exe;.\Debug\ogrinfo.exe;.\Debug\ogr2ogr.exe;.\Debug\gdalmdiminfo.exe;.\Debug\gdalmdimtranslate.exe;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\Debug\gdalinfo.exe;.\Debug\gdalbuildvrt.exe;.\Debug\gdaladdo.exe;.\Debug\gdal_grid.exe;.\Debug\gdal_translate.exe;.\Debug\gdal_rasterize.exe;.\Debug\gdalsrsinfo.exe;.\Debug\gdalenhance.exe;.\Debug\gdalmanage.exe;.\Debug\gdaltransform.exe;.\Debug\gdaltindex.exe;.\Debug\gdaldem.exe;.\Debug\gdal_create.exe;.\Debug\gdal_viewshed.exe;.\Debug\nearblack.exe;.\Debug\ogrlineref.exe;.\Debug\ogrtindex.exe;.\Debug\gdalwarp.exe;.\Debug\gdal_contour.exe;.\Debug\gdallocationinfo.exe;.\Debug\ogrinfo.exe;.\Debug\ogr2ogr.exe;.\Debug\gdalmdiminfo.exe;.\Debug\gdalmdimtranslate.exe;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\CMakeFiles\gdalapps</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\CMakeFiles\gdalapps</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release\gdalinfo.exe;.\Release\gdalbuildvrt.exe;.\Release\gdaladdo.exe;.\Release\gdal_grid.exe;.\Release\gdal_translate.exe;.\Release\gdal_rasterize.exe;.\Release\gdalsrsinfo.exe;.\Release\gdalenhance.exe;.\Release\gdalmanage.exe;.\Release\gdaltransform.exe;.\Release\gdaltindex.exe;.\Release\gdaldem.exe;.\Release\gdal_create.exe;.\Release\gdal_viewshed.exe;.\Release\nearblack.exe;.\Release\ogrlineref.exe;.\Release\ogrtindex.exe;.\Release\gdalwarp.exe;.\Release\gdal_contour.exe;.\Release\gdallocationinfo.exe;.\Release\ogrinfo.exe;.\Release\ogr2ogr.exe;.\Release\gdalmdiminfo.exe;.\Release\gdalmdimtranslate.exe;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\Release\gdalinfo.exe;.\Release\gdalbuildvrt.exe;.\Release\gdaladdo.exe;.\Release\gdal_grid.exe;.\Release\gdal_translate.exe;.\Release\gdal_rasterize.exe;.\Release\gdalsrsinfo.exe;.\Release\gdalenhance.exe;.\Release\gdalmanage.exe;.\Release\gdaltransform.exe;.\Release\gdaltindex.exe;.\Release\gdaldem.exe;.\Release\gdal_create.exe;.\Release\gdal_viewshed.exe;.\Release\nearblack.exe;.\Release\ogrlineref.exe;.\Release\ogrtindex.exe;.\Release\gdalwarp.exe;.\Release\gdal_contour.exe;.\Release\gdallocationinfo.exe;.\Release\ogrinfo.exe;.\Release\ogr2ogr.exe;.\Release\gdalmdiminfo.exe;.\Release\gdalmdimtranslate.exe;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\CMakeFiles\gdalapps</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\CMakeFiles\gdalapps</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\MinSizeRel\gdalinfo.exe;.\MinSizeRel\gdalbuildvrt.exe;.\MinSizeRel\gdaladdo.exe;.\MinSizeRel\gdal_grid.exe;.\MinSizeRel\gdal_translate.exe;.\MinSizeRel\gdal_rasterize.exe;.\MinSizeRel\gdalsrsinfo.exe;.\MinSizeRel\gdalenhance.exe;.\MinSizeRel\gdalmanage.exe;.\MinSizeRel\gdaltransform.exe;.\MinSizeRel\gdaltindex.exe;.\MinSizeRel\gdaldem.exe;.\MinSizeRel\gdal_create.exe;.\MinSizeRel\gdal_viewshed.exe;.\MinSizeRel\nearblack.exe;.\MinSizeRel\ogrlineref.exe;.\MinSizeRel\ogrtindex.exe;.\MinSizeRel\gdalwarp.exe;.\MinSizeRel\gdal_contour.exe;.\MinSizeRel\gdallocationinfo.exe;.\MinSizeRel\ogrinfo.exe;.\MinSizeRel\ogr2ogr.exe;.\MinSizeRel\gdalmdiminfo.exe;.\MinSizeRel\gdalmdimtranslate.exe;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\CMakeFiles\gdalapps</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\RelWithDebInfo\gdalinfo.exe;.\RelWithDebInfo\gdalbuildvrt.exe;.\RelWithDebInfo\gdaladdo.exe;.\RelWithDebInfo\gdal_grid.exe;.\RelWithDebInfo\gdal_translate.exe;.\RelWithDebInfo\gdal_rasterize.exe;.\RelWithDebInfo\gdalsrsinfo.exe;.\RelWithDebInfo\gdalenhance.exe;.\RelWithDebInfo\gdalmanage.exe;.\RelWithDebInfo\gdaltransform.exe;.\RelWithDebInfo\gdaltindex.exe;.\RelWithDebInfo\gdaldem.exe;.\RelWithDebInfo\gdal_create.exe;.\RelWithDebInfo\gdal_viewshed.exe;.\RelWithDebInfo\nearblack.exe;.\RelWithDebInfo\ogrlineref.exe;.\RelWithDebInfo\ogrtindex.exe;.\RelWithDebInfo\gdalwarp.exe;.\RelWithDebInfo\gdal_contour.exe;.\RelWithDebInfo\gdallocationinfo.exe;.\RelWithDebInfo\ogrinfo.exe;.\RelWithDebInfo\ogr2ogr.exe;.\RelWithDebInfo\gdalmdiminfo.exe;.\RelWithDebInfo\gdalmdimtranslate.exe;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\CMakeFiles\gdalapps</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\gdalapps">
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A1E8FCDD-5190-3127-A6E2-471502D5C8FB}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>OSGeo.GDAL.Samples.GDALGetHistogram</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\a5b0185e08321f62fef8aaf83d2bbff0\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E echo ======= Building .NET project OSGeo.GDAL.Samples.GDALGetHistogram [Release ]"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe add .\GDALGetHistogram\GDALGetHistogram.csproj package --version 3.6.4 OSGeo.GDAL
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe clean .\GDALGetHistogram\GDALGetHistogram.csproj /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe build -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props .\GDALGetHistogram\GDALGetHistogram.csproj
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe pack --no-build --no-restore .\GDALGetHistogram\GDALGetHistogram.csproj -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props --include-symbols --output .\ -p:PackageVersion=3.6.4
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E echo ======= Building .NET project OSGeo.GDAL.Samples.GDALGetHistogram [Release ]"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe add .\GDALGetHistogram\GDALGetHistogram.csproj package --version 3.6.4 OSGeo.GDAL
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe clean .\GDALGetHistogram\GDALGetHistogram.csproj /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe build -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props .\GDALGetHistogram\GDALGetHistogram.csproj
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe pack --no-build --no-restore .\GDALGetHistogram\GDALGetHistogram.csproj -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props --include-symbols --output .\ -p:PackageVersion=3.6.4
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E echo ======= Building .NET project OSGeo.GDAL.Samples.GDALGetHistogram [Release ]"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe add .\GDALGetHistogram\GDALGetHistogram.csproj package --version 3.6.4 OSGeo.GDAL
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe clean .\GDALGetHistogram\GDALGetHistogram.csproj /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe build -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props .\GDALGetHistogram\GDALGetHistogram.csproj
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe pack --no-build --no-restore .\GDALGetHistogram\GDALGetHistogram.csproj -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props --include-symbols --output .\ -p:PackageVersion=3.6.4
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GDALGetHistogram\GDALGetHistogram.csproj;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\GDALGetHistogram\GDALGetHistogram.csproj;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\GDALGetHistogram\GDALGetHistogram.csproj;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E echo ======= Building .NET project OSGeo.GDAL.Samples.GDALGetHistogram [Release ]"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe add .\GDALGetHistogram\GDALGetHistogram.csproj package --version 3.6.4 OSGeo.GDAL
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe clean .\GDALGetHistogram\GDALGetHistogram.csproj /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe build -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props .\GDALGetHistogram\GDALGetHistogram.csproj
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe pack --no-build --no-restore .\GDALGetHistogram\GDALGetHistogram.csproj -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props --include-symbols --output .\ -p:PackageVersion=3.6.4
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E echo ======= Building .NET project OSGeo.GDAL.Samples.GDALGetHistogram [Release ]"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe add .\GDALGetHistogram\GDALGetHistogram.csproj package --version 3.6.4 OSGeo.GDAL
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe clean .\GDALGetHistogram\GDALGetHistogram.csproj /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe build -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props .\GDALGetHistogram\GDALGetHistogram.csproj
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe pack --no-build --no-restore .\GDALGetHistogram\GDALGetHistogram.csproj -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props --include-symbols --output .\ -p:PackageVersion=3.6.4
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E echo ======= Building .NET project OSGeo.GDAL.Samples.GDALGetHistogram [Release ]"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe add .\GDALGetHistogram\GDALGetHistogram.csproj package --version 3.6.4 OSGeo.GDAL
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe clean .\GDALGetHistogram\GDALGetHistogram.csproj /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe build -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props .\GDALGetHistogram\GDALGetHistogram.csproj
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe pack --no-build --no-restore .\GDALGetHistogram\GDALGetHistogram.csproj -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props --include-symbols --output .\ -p:PackageVersion=3.6.4
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GDALGetHistogram\GDALGetHistogram.csproj;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\GDALGetHistogram\GDALGetHistogram.csproj;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\GDALGetHistogram\GDALGetHistogram.csproj;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E echo ======= Building .NET project OSGeo.GDAL.Samples.GDALGetHistogram [Release ]"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe add .\GDALGetHistogram\GDALGetHistogram.csproj package --version 3.6.4 OSGeo.GDAL
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe clean .\GDALGetHistogram\GDALGetHistogram.csproj /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe build -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props .\GDALGetHistogram\GDALGetHistogram.csproj
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe pack --no-build --no-restore .\GDALGetHistogram\GDALGetHistogram.csproj -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props --include-symbols --output .\ -p:PackageVersion=3.6.4
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\GDALGetHistogram\GDALGetHistogram.csproj;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E echo ======= Building .NET project OSGeo.GDAL.Samples.GDALGetHistogram [Release ]"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe add .\GDALGetHistogram\GDALGetHistogram.csproj package --version 3.6.4 OSGeo.GDAL
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe clean .\GDALGetHistogram\GDALGetHistogram.csproj /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe build -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props .\GDALGetHistogram\GDALGetHistogram.csproj
+if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files\dotnet\dotnet.exe pack --no-build --no-restore .\GDALGetHistogram\GDALGetHistogram.csproj -c Release /p:DirectoryBuildPropsPath=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/GDALGetHistogram.csproj.imports.props --include-symbols --output .\ -p:PackageVersion=3.6.4
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\GDALGetHistogram\GDALGetHistogram.csproj;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\f547fa6362b3dd06125950a76a1ae1e3\OSGeo.GDAL.Samples.GDALGetHistogram.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\CMakeFiles\OSGeo.GDAL.Samples.GDALGetHistogram</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\CMakeFiles\OSGeo.GDAL.Samples.GDALGetHistogram</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\CMakeFiles\OSGeo.GDAL.Samples.GDALGetHistogram</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\CMakeFiles\OSGeo.GDAL.Samples.GDALGetHistogram</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\CMakeFiles\OSGeo.GDAL.Samples.GDALGetHistogram</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\CMakeFiles\OSGeo.GDAL.Samples.GDALGetHistogram</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\CMakeFiles\OSGeo.GDAL.Samples.GDALGetHistogram</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\OSGeo.GDAL.Samples.GDALGetHistogram.buildtimestamp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\CMakeFiles\OSGeo.GDAL.Samples.GDALGetHistogram</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\OSGeo.GDAL.Samples.GDALGetHistogram">
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

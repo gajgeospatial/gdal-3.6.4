@@ -1,0 +1,14 @@
+# CMake generation dependency list for this directory.
+N:/Development/Dev_Base/gdal-3.6.4/cmake/helpers/GdalSetRuntimeEnv.cmake
+N:/Development/Dev_Base/gdal-3.6.4/cmake/helpers/GdalStandardIncludes.cmake
+N:/Development/Dev_Base/gdal-3.6.4/cmake/modules/thirdparty/DotnetImports.props.in
+N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/const/gdalconst_csharp.csproj.in
+N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/gdal/gdal_csharp.csproj.in
+N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/ogr/ogr_csharp.csproj.in
+N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/osr/osr_csharp.csproj.in
+N:/Development/Dev_Base/gdal-3.6.4/swig/csharp/CMakeLists.txt
+N:/Development/Dev_Base/gdal-3.6.4/swig/csharp/Directory.Build.props
+N:/Development/Dev_Base/gdal-3.6.4/swig/csharp/dll_template.csproj
+N:/Development/Dev_Base/gdal-3.6.4/swig/csharp/exe_template.csproj
+N:/Development/Dev_Base/gdal-3.6.4/swig/csharp/gdal.snk
+N:/Development/Dev_Base/gdal-3.6.4/swig/csharp/osgeo.gdal.core.csproj.in

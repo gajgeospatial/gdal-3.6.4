@@ -1,0 +1,23 @@
+^N:\DEVELOPMENT\DEV_BASE\GDAL-3.6.4\MSVC\STRUCT.BAT
+if exist vc143\\x64\\data\\proj.db goto :cmEnd
+          if not exist vc143 mkdir vc143
+          if %errorlevel% neq 0 goto :cmEnd
+          if not exist vc143\\x64 mkdir vc143\\x64
+          if %errorlevel% neq 0 goto :cmEnd
+          if not exist vc143\\x64\\bin mkdir vc143\\x64\\bin
+          if %errorlevel% neq 0 goto :cmEnd
+          if not exist vc143\\x64\\bin\\gdalplugins mkdir vc143\\x64\\bin\\gdalplugins
+          if %errorlevel% neq 0 goto :cmEnd
+          if not exist ..\\data\\proj.db copy /y ..\\..\\Proj-9.1.1\\data\\proj.db ..\\data\\proj.db
+          if %errorlevel% neq 0 goto :cmEnd
+          if exist vc143\\x64\\data mkdir vc143\\x64\\data go :cmEnd
+          mkdir vc143\\x64\\data
+          if %errorlevel% neq 0 goto :cmEnd
+          copy /y ..\data\* vc143\\x64\\data
+          if %errorlevel% neq 0 goto :cmEnd
+          :cmEnd
+          endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

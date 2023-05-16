@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C41BDCB2-380A-342E-9034-88E0FB325E74}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gcore</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gcore</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">gcore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gcore</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">gcore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gcore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gcore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;..\..\..\$(XERCES_DIR)\src\xercesc;..\..\..\$(XERCES_DIR)\src;..\..\..\$(JSON_DIR);..\..\..\$(JSON_DIR)\msvc;..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(GEOS_DIR)\capi;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4275;4786;4100;4245;4206;4351;4611</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_SSSE3_AT_COMPILE_TIME;PAM_ENABLED;SQLITE_ENABLED;HAVE_LIBXML2;HAVE_GEOS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;HAVE_SSSE3_AT_COMPILE_TIME;PAM_ENABLED;SQLITE_ENABLED;HAVE_LIBXML2;HAVE_GEOS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;..\..\..\$(XERCES_DIR)\src\xercesc;..\..\..\$(XERCES_DIR)\src;..\..\..\$(JSON_DIR);..\..\..\$(JSON_DIR)\msvc;..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(GEOS_DIR)\capi;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4275;4786;4100;4245;4206;4351;4611</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_SSSE3_AT_COMPILE_TIME;PAM_ENABLED;SQLITE_ENABLED;HAVE_LIBXML2;HAVE_GEOS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;HAVE_SSSE3_AT_COMPILE_TIME;PAM_ENABLED;SQLITE_ENABLED;HAVE_LIBXML2;HAVE_GEOS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;..\..\..\$(XERCES_DIR)\src\xercesc;..\..\..\$(XERCES_DIR)\src;..\..\..\$(JSON_DIR);..\..\..\$(JSON_DIR)\msvc;..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(GEOS_DIR)\capi;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4251;4275;4786;4100;4245;4206;4351;4611</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_SSSE3_AT_COMPILE_TIME;PAM_ENABLED;SQLITE_ENABLED;HAVE_LIBXML2;HAVE_GEOS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_SSSE3_AT_COMPILE_TIME;PAM_ENABLED;SQLITE_ENABLED;HAVE_LIBXML2;HAVE_GEOS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;..\..\..\$(XERCES_DIR)\src\xercesc;..\..\..\$(XERCES_DIR)\src;..\..\..\$(JSON_DIR);..\..\..\$(JSON_DIR)\msvc;..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(GEOS_DIR)\capi;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4251;4275;4786;4100;4245;4206;4351;4611</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_SSSE3_AT_COMPILE_TIME;PAM_ENABLED;SQLITE_ENABLED;HAVE_LIBXML2;HAVE_GEOS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_SSSE3_AT_COMPILE_TIME;PAM_ENABLED;SQLITE_ENABLED;HAVE_LIBXML2;HAVE_GEOS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4251;4275;4786;4100;4245;4206;4351;4611</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_SSSE3_AT_COMPILE_TIME;PAM_ENABLED;SQLITE_ENABLED;HAVE_LIBXML2;HAVE_GEOS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_SSSE3_AT_COMPILE_TIME;PAM_ENABLED;SQLITE_ENABLED;HAVE_LIBXML2;HAVE_GEOS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4275;4786;4100;4245;4206;4351;4611</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_SSSE3_AT_COMPILE_TIME;PAM_ENABLED;SQLITE_ENABLED;HAVE_LIBXML2;HAVE_GEOS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_SSSE3_AT_COMPILE_TIME;PAM_ENABLED;SQLITE_ENABLED;HAVE_LIBXML2;HAVE_GEOS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\apps;..\..\alg;..\..\gcore;.\;..\..\port;..\port;..\..\ogr;..\..\ogr\ogrsf_frmts;..\..\frmts;..\..\ogr\ogrsf_frmts\generic;..\..\ogr\ogrsf_frmts\geojson;..\..\frmts\gtiff;..\..\frmts\mem;..\..\frmts\vrt;\xercesc;..\..\..\$(JSON_DIR);..\..\..\$(LIBXML2_DIR)\Include;..\..\..\$(ICONV_DIR);..\..\..\$(GEOS_DIR)\include;..\..\..\$(PROJ_DIR)\src;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\gcore\gdalopeninfo.cpp" />
+    <ClCompile Include="..\..\gcore\gdaldriver.cpp" />
+    <ClCompile Include="..\..\gcore\gdaldrivermanager.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">INST_DATA="C:\\Program Files\\gdal\\share\\gdal";INSTALL_PLUGIN_FULL_DIR="C:\\Program Files\\gdal\\lib\\gdalplugins";HAVE_XERCES;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">INST_DATA="C:\\Program Files\\gdal\\share\\gdal";INSTALL_PLUGIN_FULL_DIR="C:\\Program Files\\gdal\\lib\\gdalplugins";HAVE_XERCES;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">INST_DATA="C:\\Program Files\\gdal\\share\\gdal";INSTALL_PLUGIN_FULL_DIR="C:\\Program Files\\gdal\\lib\\gdalplugins";HAVE_XERCES;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">INST_DATA="C:\\Program Files\\gdal\\share\\gdal";INSTALL_PLUGIN_FULL_DIR="C:\Program Files\gdal\lib\gdalplugins";HAVE_XERCES;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">INST_DATA="C:\\Program Files\\gdal\\share\\gdal";INSTALL_PLUGIN_FULL_DIR="C:\\Program Files\\gdal\\lib\\gdalplugins";HAVE_XERCES;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">INST_DATA="C:\\Program Files\\gdal\\share\\gdal";INSTALL_PLUGIN_FULL_DIR="C:\\Program Files\\gdal\\lib\\gdalplugins";HAVE_XERCES;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\..\gcore\gdaldataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdalrasterband.cpp" />
+    <ClCompile Include="..\..\gcore\gdal_misc.cpp" />
+    <ClCompile Include="..\..\gcore\gdalrasterblock.cpp" />
+    <ClCompile Include="..\..\gcore\gdalcolortable.cpp" />
+    <ClCompile Include="..\..\gcore\gdalmajorobject.cpp" />
+    <ClCompile Include="..\..\gcore\gdaldefaultoverviews.cpp" />
+    <ClCompile Include="..\..\gcore\gdalpamdataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdalpamrasterband.cpp" />
+    <ClCompile Include="..\..\gcore\gdaljp2metadata.cpp" />
+    <ClCompile Include="..\..\gcore\gdaljp2box.cpp" />
+    <ClCompile Include="..\..\gcore\gdalmultidomainmetadata.cpp" />
+    <ClCompile Include="..\..\gcore\gdal_rat.cpp" />
+    <ClCompile Include="..\..\gcore\gdalpamproxydb.cpp" />
+    <ClCompile Include="..\..\gcore\gdalallvalidmaskband.cpp" />
+    <ClCompile Include="..\..\gcore\gdalnodatamaskband.cpp" />
+    <ClCompile Include="..\..\gcore\gdalnodatavaluesmaskband.cpp" />
+    <ClCompile Include="..\..\gcore\gdalproxydataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdalproxypool.cpp" />
+    <ClCompile Include="..\..\gcore\gdaldefaultasync.cpp" />
+    <ClCompile Include="..\..\gcore\gdaldllmain.cpp" />
+    <ClCompile Include="..\..\gcore\gdalexif.cpp" />
+    <ClCompile Include="..\..\gcore\gdalgeorefpamdataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdaljp2abstractdataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdalvirtualmem.cpp" />
+    <ClCompile Include="..\..\gcore\gdaloverviewdataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdalrescaledalphaband.cpp" />
+    <ClCompile Include="..\..\gcore\gdaljp2structure.cpp" />
+    <ClCompile Include="..\..\gcore\gdal_mdreader.cpp" />
+    <ClCompile Include="..\..\gcore\gdaljp2metadatagenerator.cpp" />
+    <ClCompile Include="..\..\gcore\gdalabstractbandblockcache.cpp" />
+    <ClCompile Include="..\..\gcore\gdalarraybandblockcache.cpp" />
+    <ClCompile Include="..\..\gcore\gdalhashsetbandblockcache.cpp" />
+    <ClCompile Include="..\..\gcore\gdalrelationship.cpp" />
+    <ClCompile Include="..\..\gcore\overview.cpp" />
+    <ClCompile Include="..\..\gcore\rasterio.cpp" />
+    <ClCompile Include="..\..\gcore\rawdataset.cpp" />
+    <ClCompile Include="..\..\gcore\gdalmultidim.cpp" />
+    <ClCompile Include="..\..\gcore\gdalpython.cpp" />
+    <ClCompile Include="..\..\gcore\gdalpythondriverloader.cpp" />
+    <ClCompile Include="..\..\gcore\tilematrixset.cpp" />
+    <ClCompile Include="..\..\gcore\gdal_thread_pool.cpp" />
+    <ClCompile Include="..\..\gcore\nasakeywordhandler.cpp" />
+    <ClCompile Include="..\..\gcore\rasterio_ssse3.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

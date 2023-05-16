@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\cad\gdalcaddataset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\cad\ogrcaddriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\cad\ogrcadlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\cad\vsilfileio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ogr\ogrsf_frmts\cad\ogr_cad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ogr\ogrsf_frmts\cad\vsilfileio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\io.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\r2000.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cadclasses.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cadcolors.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\caddictionary.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cadfile.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cadfileio.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cadgeometry.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cadfilestreamio.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cadheader.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cadlayer.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cadobjects.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cadtables.obj" />
+    <Object Include=".\libopencad\libopencad.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\opencad.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{07A414C3-BAD2-3F93-88D2-B2A101CC054E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{7E46F6C6-3D84-3652-AB2B-B2E2F332B84D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AFBF3D6C-1CBC-3397-9CD5-82BB52C95300}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

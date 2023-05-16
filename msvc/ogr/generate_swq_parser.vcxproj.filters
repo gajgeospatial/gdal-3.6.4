@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3b4be7aaf5d8ad3b4a89edcd0a1dfc14\generate_swq_parser.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="N:\Development\Dev_Base\gdal-3.6.4\ogr\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\CMakeFiles\generate_swq_parser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{401AE35D-CBD1-35CB-AAB2-FDA006E23AA3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

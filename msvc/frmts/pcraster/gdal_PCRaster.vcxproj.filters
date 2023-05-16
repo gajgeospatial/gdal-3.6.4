@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\frmts\pcraster\pcrasterdataset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\frmts\pcraster\pcrastermisc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\frmts\pcraster\pcrasterrasterband.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\frmts\pcraster\pcrasterutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\frmts\pcraster\pcrasterdataset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\frmts\pcraster\pcrasterrasterband.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\frmts\pcraster\pcrasterutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\_getcell.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cellsize.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\delattr.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdattype.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gnrrows.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\legend.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pminval.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rcomp.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\setangle.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vsdef.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\_getrow.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\create2.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dumconv.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\getattr.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gproj.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mclose.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\putallmv.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rcoords.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\setmv.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vsis.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\_gsomece.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\endian.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\getx0.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gputproj.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mopen.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\putattr.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rdup2.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\setvtmv.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vsvers.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\_putcell.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\file.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gety0.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gvalscal.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\moreattr.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\putsomec.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\reseterr.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\strconst.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\wattrblk.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\_rputrow.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\csfglob.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\filename.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ggisfid.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gvartype.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\mperror.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\putx0.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rextend.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\strpad.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\angle.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gattrblk.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gmaxval.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gversion.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\puty0.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rmalloc.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\swapio.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\attravai.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\csfsup.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gattridx.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gminval.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ismv.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pgisfid.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pvalscal.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rrowcol.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\trackmm.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\attrsize.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gcellrep.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gnrcols.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\kernlcsf.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\pmaxval.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\rattrblk.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ruseas.obj" />
+    <Object Include=".\libcsf\csf.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\vs2.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{07A414C3-BAD2-3F93-88D2-B2A101CC054E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{7E46F6C6-3D84-3652-AB2B-B2E2F332B84D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AFBF3D6C-1CBC-3397-9CD5-82BB52C95300}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

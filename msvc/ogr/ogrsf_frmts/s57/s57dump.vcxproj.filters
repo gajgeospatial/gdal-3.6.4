@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ogr\ogrsf_frmts\s57\s57dump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include=".\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrs57driver.obj" />
+    <Object Include=".\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrs57datasource.obj" />
+    <Object Include=".\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ogrs57layer.obj" />
+    <Object Include=".\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\s57classregistrar.obj" />
+    <Object Include=".\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\s57reader.obj" />
+    <Object Include=".\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfrecordindex.obj" />
+    <Object Include=".\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\s57featuredefns.obj" />
+    <Object Include=".\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\s57filecollector.obj" />
+    <Object Include=".\ogr_S57.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\s57writer.obj" />
+    <Object Include="..\..\..\frmts\iso8211\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfmodule.obj" />
+    <Object Include="..\..\..\frmts\iso8211\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfutils.obj" />
+    <Object Include="..\..\..\frmts\iso8211\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddffielddefn.obj" />
+    <Object Include="..\..\..\frmts\iso8211\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfrecord.obj" />
+    <Object Include="..\..\..\frmts\iso8211\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddffield.obj" />
+    <Object Include="..\..\..\frmts\iso8211\gdal_iso8211.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddfsubfielddefn.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{7E46F6C6-3D84-3652-AB2B-B2E2F332B84D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AFBF3D6C-1CBC-3397-9CD5-82BB52C95300}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckSymbolExists.cmake
+N:/Development/Dev_Base/gdal-3.6.4/cmake/helpers/GdalDriverHelper.cmake
+N:/Development/Dev_Base/gdal-3.6.4/cmake/helpers/TargetPublicHeader.cmake
+N:/Development/Dev_Base/gdal-3.6.4/port/CMakeLists.txt

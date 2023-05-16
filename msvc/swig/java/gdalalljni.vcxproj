@@ -1,0 +1,1091 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{906DE84E-3303-3706-AF5C-E04CA5CF5AD8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gdalalljni</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gdalalljni</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">gdalalljni</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">gdalalljni</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gdalalljni</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">gdalalljni</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">gdalalljni</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gdalalljni</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gdalalljni</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="Debug";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"Debug\";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gdald.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdalalljni.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="Debug";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"Debug\";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gdald.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdalalljni.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="Debug";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"Debug\";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gdald.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdalalljni.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="Release";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"Release\";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gdal.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdalalljni.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="Release";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"Release\";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gdal.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdalalljni.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="Release";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"Release\";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gdal.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdalalljni.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="MinSizeRel";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"MinSizeRel\";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gdal.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\MinSizeRel;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdalalljni.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR="RelWithDebInfo";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;HAVE_SSE_AT_COMPILE_TIME;HAVE_SSSE3_AT_COMPILE_TIME;HAVE_AVX_AT_COMPILE_TIME;GDAL_COMPILATION;CMAKE_INTDIR=\"RelWithDebInfo\";gdalalljni_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\apps;..\..\..\alg;..\..\..\gcore;..\..\gcore;..\..\..\port;..\..\port;..\..\..\ogr;..\..\..\ogr\ogrsf_frmts;..\..\..\frmts;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\include\win32;.\;..\..\gcore\gdal_version_full;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>gdal.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\MinSizeRel;..\..\RelWithDebInfo;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)gdalalljni.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\9b51080c3f6c82da44812147fcb1bac5\gdal_wrap.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating org/gdal/gdal/gdal_wrap.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating org/gdal/gdal/gdal_wrap.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating org/gdal/gdal/gdal_wrap.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdal
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdal -package org.gdal.gdal -I..\..\..\gdal -c++ -java -o .\org\gdal\gdal\gdal_wrap.cpp ..\..\..\swig\include\gdal.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdal
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdal -package org.gdal.gdal -I..\..\..\gdal -c++ -java -o .\org\gdal\gdal\gdal_wrap.cpp ..\..\..\swig\include\gdal.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdal
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdal -package org.gdal.gdal -I..\..\..\gdal -c++ -java -o .\org\gdal\gdal\gdal_wrap.cpp ..\..\..\swig\include\gdal.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\org\gdal\gdal\gdal_wrap.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\org\gdal\gdal\gdal_wrap.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\org\gdal\gdal\gdal_wrap.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating org/gdal/gdal/gdal_wrap.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating org/gdal/gdal/gdal_wrap.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating org/gdal/gdal/gdal_wrap.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdal
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdal -package org.gdal.gdal -I..\..\..\gdal -c++ -java -o .\org\gdal\gdal\gdal_wrap.cpp ..\..\..\swig\include\gdal.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdal
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdal -package org.gdal.gdal -I..\..\..\gdal -c++ -java -o .\org\gdal\gdal\gdal_wrap.cpp ..\..\..\swig\include\gdal.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdal
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdal -package org.gdal.gdal -I..\..\..\gdal -c++ -java -o .\org\gdal\gdal\gdal_wrap.cpp ..\..\..\swig\include\gdal.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\org\gdal\gdal\gdal_wrap.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\org\gdal\gdal\gdal_wrap.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\org\gdal\gdal\gdal_wrap.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating org/gdal/gdal/gdal_wrap.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdal
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdal -package org.gdal.gdal -I..\..\..\gdal -c++ -java -o .\org\gdal\gdal\gdal_wrap.cpp ..\..\..\swig\include\gdal.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\org\gdal\gdal\gdal_wrap.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating org/gdal/gdal/gdal_wrap.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdal
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdal -package org.gdal.gdal -I..\..\..\gdal -c++ -java -o .\org\gdal\gdal\gdal_wrap.cpp ..\..\..\swig\include\gdal.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\org\gdal\gdal\gdal_wrap.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\edb6bd6ce63ced240ba2ba6714cab40a\gdalconst_wrap.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating org/gdal/gdalconst/gdalconst_wrap.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating org/gdal/gdalconst/gdalconst_wrap.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating org/gdal/gdalconst/gdalconst_wrap.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdalconst
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdalconst -package org.gdal.gdalconst -I..\..\..\gdal -java -o .\org\gdal\gdalconst\gdalconst_wrap.c ..\..\..\swig\include\gdalconst.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdalconst
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdalconst -package org.gdal.gdalconst -I..\..\..\gdal -java -o .\org\gdal\gdalconst\gdalconst_wrap.c ..\..\..\swig\include\gdalconst.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdalconst
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdalconst -package org.gdal.gdalconst -I..\..\..\gdal -java -o .\org\gdal\gdalconst\gdalconst_wrap.c ..\..\..\swig\include\gdalconst.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\org\gdal\gdalconst\gdalconst_wrap.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\org\gdal\gdalconst\gdalconst_wrap.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\org\gdal\gdalconst\gdalconst_wrap.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating org/gdal/gdalconst/gdalconst_wrap.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating org/gdal/gdalconst/gdalconst_wrap.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating org/gdal/gdalconst/gdalconst_wrap.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdalconst
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdalconst -package org.gdal.gdalconst -I..\..\..\gdal -java -o .\org\gdal\gdalconst\gdalconst_wrap.c ..\..\..\swig\include\gdalconst.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdalconst
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdalconst -package org.gdal.gdalconst -I..\..\..\gdal -java -o .\org\gdal\gdalconst\gdalconst_wrap.c ..\..\..\swig\include\gdalconst.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdalconst
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdalconst -package org.gdal.gdalconst -I..\..\..\gdal -java -o .\org\gdal\gdalconst\gdalconst_wrap.c ..\..\..\swig\include\gdalconst.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\org\gdal\gdalconst\gdalconst_wrap.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\org\gdal\gdalconst\gdalconst_wrap.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\org\gdal\gdalconst\gdalconst_wrap.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating org/gdal/gdalconst/gdalconst_wrap.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdalconst
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdalconst -package org.gdal.gdalconst -I..\..\..\gdal -java -o .\org\gdal\gdalconst\gdalconst_wrap.c ..\..\..\swig\include\gdalconst.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\org\gdal\gdalconst\gdalconst_wrap.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating org/gdal/gdalconst/gdalconst_wrap.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\gdalconst
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\gdalconst -package org.gdal.gdalconst -I..\..\..\gdal -java -o .\org\gdal\gdalconst\gdalconst_wrap.c ..\..\..\swig\include\gdalconst.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\org\gdal\gdalconst\gdalconst_wrap.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\da47dc16242492b905081ccb9fcfc1f9\ogr_wrap.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating org/gdal/ogr/ogr_wrap.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating org/gdal/ogr/ogr_wrap.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating org/gdal/ogr/ogr_wrap.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\ogr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\ogr -package org.gdal.ogr -I..\..\..\gdal -c++ -java -o .\org\gdal\ogr\ogr_wrap.cpp ..\..\..\swig\include\ogr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\ogr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\ogr -package org.gdal.ogr -I..\..\..\gdal -c++ -java -o .\org\gdal\ogr\ogr_wrap.cpp ..\..\..\swig\include\ogr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\ogr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\ogr -package org.gdal.ogr -I..\..\..\gdal -c++ -java -o .\org\gdal\ogr\ogr_wrap.cpp ..\..\..\swig\include\ogr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\org\gdal\ogr\ogr_wrap.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\org\gdal\ogr\ogr_wrap.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\org\gdal\ogr\ogr_wrap.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating org/gdal/ogr/ogr_wrap.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating org/gdal/ogr/ogr_wrap.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating org/gdal/ogr/ogr_wrap.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\ogr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\ogr -package org.gdal.ogr -I..\..\..\gdal -c++ -java -o .\org\gdal\ogr\ogr_wrap.cpp ..\..\..\swig\include\ogr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\ogr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\ogr -package org.gdal.ogr -I..\..\..\gdal -c++ -java -o .\org\gdal\ogr\ogr_wrap.cpp ..\..\..\swig\include\ogr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\ogr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\ogr -package org.gdal.ogr -I..\..\..\gdal -c++ -java -o .\org\gdal\ogr\ogr_wrap.cpp ..\..\..\swig\include\ogr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\org\gdal\ogr\ogr_wrap.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\org\gdal\ogr\ogr_wrap.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\org\gdal\ogr\ogr_wrap.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating org/gdal/ogr/ogr_wrap.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\ogr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\ogr -package org.gdal.ogr -I..\..\..\gdal -c++ -java -o .\org\gdal\ogr\ogr_wrap.cpp ..\..\..\swig\include\ogr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\org\gdal\ogr\ogr_wrap.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating org/gdal/ogr/ogr_wrap.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\ogr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\ogr -package org.gdal.ogr -I..\..\..\gdal -c++ -java -o .\org\gdal\ogr\ogr_wrap.cpp ..\..\..\swig\include\ogr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\org\gdal\ogr\ogr_wrap.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\9c7fd64f965aa9c603b021ffb112bc83\osr_wrap.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating org/gdal/osr/osr_wrap.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating org/gdal/osr/osr_wrap.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating org/gdal/osr/osr_wrap.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\osr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\osr -package org.gdal.osr -I..\..\..\gdal -c++ -java -o .\org\gdal\osr\osr_wrap.cpp ..\..\..\swig\include\osr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\osr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\osr -package org.gdal.osr -I..\..\..\gdal -c++ -java -o .\org\gdal\osr\osr_wrap.cpp ..\..\..\swig\include\osr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\osr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\osr -package org.gdal.osr -I..\..\..\gdal -c++ -java -o .\org\gdal\osr\osr_wrap.cpp ..\..\..\swig\include\osr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\org\gdal\osr\osr_wrap.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\org\gdal\osr\osr_wrap.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\org\gdal\osr\osr_wrap.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating org/gdal/osr/osr_wrap.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating org/gdal/osr/osr_wrap.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating org/gdal/osr/osr_wrap.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\osr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\osr -package org.gdal.osr -I..\..\..\gdal -c++ -java -o .\org\gdal\osr\osr_wrap.cpp ..\..\..\swig\include\osr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\osr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\osr -package org.gdal.osr -I..\..\..\gdal -c++ -java -o .\org\gdal\osr\osr_wrap.cpp ..\..\..\swig\include\osr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\osr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\osr -package org.gdal.osr -I..\..\..\gdal -c++ -java -o .\org\gdal\osr\osr_wrap.cpp ..\..\..\swig\include\osr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\org\gdal\osr\osr_wrap.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\org\gdal\osr\osr_wrap.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\org\gdal\osr\osr_wrap.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating org/gdal/osr/osr_wrap.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\osr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\osr -package org.gdal.osr -I..\..\..\gdal -c++ -java -o .\org\gdal\osr\osr_wrap.cpp ..\..\..\swig\include\osr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\org\gdal\osr\osr_wrap.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating org/gdal/osr/osr_wrap.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd ..\..\..\swig\java
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\org\gdal\osr
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\..\..\swigwin-4.1.1\swig.exe -Wall -I..\..\..\swig\include -I..\..\..\swig\include\java -outdir .\org\gdal\osr -package org.gdal.osr -I..\..\..\gdal -c++ -java -o .\org\gdal\osr\osr_wrap.cpp ..\..\..\swig\include\osr.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\swig\include\Band.i;..\..\..\swig\include\ColorTable.i;..\..\..\swig\include\cpl.i;..\..\..\swig\include\cpl_exceptions.i;..\..\..\swig\include\cplvirtualmem.i;..\..\..\swig\include\Dataset.i;..\..\..\swig\include\Driver.i;..\..\..\swig\include\gdal.i;..\..\..\swig\include\gdal_array.i;..\..\..\swig\include\gdal_typemaps.i;..\..\..\swig\include\gnm.i;..\..\..\swig\include\MajorObject.i;..\..\..\swig\include\ogr.i;..\..\..\swig\include\ogr_error_map.i;..\..\..\swig\include\Operations.i;..\..\..\swig\include\osr.i;..\..\..\swig\include\RasterAttributeTable.i;..\..\..\swig\include\Relationship.i;..\..\..\swig\include\Transform.i;..\..\..\swig\include\XMLNode.i;..\..\..\swig\include\MultiDimensional.i;..\..\..\swig\include\java\callback.i;..\..\..\swig\include\java\gdalconst_java.i;..\..\..\swig\include\java\gdal_java.i;..\..\..\swig\include\java\gnm_java.i;..\..\..\swig\include\java\java_exceptions.i;..\..\..\swig\include\java\ogr_java_extend.i;..\..\..\swig\include\java\ogr_java.i;..\..\..\swig\include\java\osr_java.i;..\..\..\swig\include\java\typemaps_java.i;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\org\gdal\osr\osr_wrap.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include=".\org\gdal\gdal\gdal_wrap.cpp" />
+    <ClCompile Include=".\org\gdal\gdalconst\gdalconst_wrap.c" />
+    <ClCompile Include=".\org\gdal\ogr\ogr_wrap.cpp" />
+    <ClCompile Include=".\org\gdal\osr\osr_wrap.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

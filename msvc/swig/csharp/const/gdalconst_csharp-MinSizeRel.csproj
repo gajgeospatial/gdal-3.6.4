@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>library</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <AssemblyVersion>3.6.4</AssemblyVersion>
+        <AssemblyOriginatorKeyFile>..\gdal.snk</AssemblyOriginatorKeyFile>
+        <SignAssembly>true</SignAssembly>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <PackageId>OSGeo.GDAL.CONST</PackageId>
+        <Authors>GDAL Contributors</Authors>
+        <Company>GDAL Project</Company>
+        <Copyright>Copyright GDAL Contributors</Copyright>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/csharp/MinSizeRel/gdalconst_wrap.dll" Pack="true" PackagePath="runtimes\win-x64\native" />
+    </ItemGroup>
+</Project>

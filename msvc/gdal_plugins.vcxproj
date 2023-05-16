@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A85D2E67-51F9-3568-A81A-F3B4FFA6EBF0}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gdal_plugins</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeFiles\e7cceda3a966922e188d765445c3af28\gdal_plugins.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\gdalplugins\Debug\gdal_PCIDSK.dll;.\gdalplugins\Debug\gdal_PDF.dll;.\gdalplugins\Debug\gdal_PNG.dll;.\gdalplugins\Debug\gdal_HDF5.dll;.\gdalplugins\Debug\gdal_WMS.dll;.\gdalplugins\Debug\gdal_WEBP.dll;.\gdalplugins\Debug\gdal_HDF4.dll;.\gdalplugins\Debug\gdal_PostGISRaster.dll;.\gdalplugins\Debug\gdal_JP2OpenJPEG.dll;.\gdalplugins\Debug\gdal_EXR.dll;.\gdalplugins\Debug\gdal_PCRaster.dll;.\gdalplugins\Debug\gdal_MrSID.dll;.\gdalplugins\Debug\gdal_ECW_JP2ECW.dll;.\gdalplugins\Debug\ogr_WAsP.dll;.\gdalplugins\Debug\ogr_GMLAS.dll;.\gdalplugins\Debug\ogr_FileGDB.dll;.\gdalplugins\Debug\ogr_LIBKML.dll;.\gdalplugins\Debug\ogr_PLSCENES.dll;.\gdalplugins\Debug\ogr_Elastic.dll;.\gdalplugins\Debug\ogr_VFK.dll;.\gdalplugins\Debug\ogr_Carto.dll;.\gdalplugins\Debug\ogr_PG.dll;.\gdalplugins\Debug\ogr_MSSQLSpatial.dll;.\gdalplugins\Debug\ogr_ODBC.dll;.\gdalplugins\Debug\ogr_XLS.dll;.\gdalplugins\Debug\ogr_CAD.dll;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\gdalplugins\Debug\gdal_PCIDSK.dll;.\gdalplugins\Debug\gdal_PDF.dll;.\gdalplugins\Debug\gdal_PNG.dll;.\gdalplugins\Debug\gdal_HDF5.dll;.\gdalplugins\Debug\gdal_WMS.dll;.\gdalplugins\Debug\gdal_WEBP.dll;.\gdalplugins\Debug\gdal_HDF4.dll;.\gdalplugins\Debug\gdal_PostGISRaster.dll;.\gdalplugins\Debug\gdal_JP2OpenJPEG.dll;.\gdalplugins\Debug\gdal_EXR.dll;.\gdalplugins\Debug\gdal_PCRaster.dll;.\gdalplugins\Debug\gdal_MrSID.dll;.\gdalplugins\Debug\gdal_ECW_JP2ECW.dll;.\gdalplugins\Debug\ogr_WAsP.dll;.\gdalplugins\Debug\ogr_GMLAS.dll;.\gdalplugins\Debug\ogr_FileGDB.dll;.\gdalplugins\Debug\ogr_LIBKML.dll;.\gdalplugins\Debug\ogr_PLSCENES.dll;.\gdalplugins\Debug\ogr_Elastic.dll;.\gdalplugins\Debug\ogr_VFK.dll;.\gdalplugins\Debug\ogr_Carto.dll;.\gdalplugins\Debug\ogr_PG.dll;.\gdalplugins\Debug\ogr_MSSQLSpatial.dll;.\gdalplugins\Debug\ogr_ODBC.dll;.\gdalplugins\Debug\ogr_XLS.dll;.\gdalplugins\Debug\ogr_CAD.dll;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\CMakeFiles\gdal_plugins</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\CMakeFiles\gdal_plugins</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\gdalplugins\Release\gdal_PCIDSK.dll;.\gdalplugins\Release\gdal_PDF.dll;.\gdalplugins\Release\gdal_PNG.dll;.\gdalplugins\Release\gdal_HDF5.dll;.\gdalplugins\Release\gdal_WMS.dll;.\gdalplugins\Release\gdal_WEBP.dll;.\gdalplugins\Release\gdal_HDF4.dll;.\gdalplugins\Release\gdal_PostGISRaster.dll;.\gdalplugins\Release\gdal_JP2OpenJPEG.dll;.\gdalplugins\Release\gdal_EXR.dll;.\gdalplugins\Release\gdal_PCRaster.dll;.\gdalplugins\Release\gdal_MrSID.dll;.\gdalplugins\Release\gdal_ECW_JP2ECW.dll;.\gdalplugins\Release\ogr_WAsP.dll;.\gdalplugins\Release\ogr_GMLAS.dll;.\gdalplugins\Release\ogr_FileGDB.dll;.\gdalplugins\Release\ogr_LIBKML.dll;.\gdalplugins\Release\ogr_PLSCENES.dll;.\gdalplugins\Release\ogr_Elastic.dll;.\gdalplugins\Release\ogr_VFK.dll;.\gdalplugins\Release\ogr_Carto.dll;.\gdalplugins\Release\ogr_PG.dll;.\gdalplugins\Release\ogr_MSSQLSpatial.dll;.\gdalplugins\Release\ogr_ODBC.dll;.\gdalplugins\Release\ogr_XLS.dll;.\gdalplugins\Release\ogr_CAD.dll;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\gdalplugins\Release\gdal_PCIDSK.dll;.\gdalplugins\Release\gdal_PDF.dll;.\gdalplugins\Release\gdal_PNG.dll;.\gdalplugins\Release\gdal_HDF5.dll;.\gdalplugins\Release\gdal_WMS.dll;.\gdalplugins\Release\gdal_WEBP.dll;.\gdalplugins\Release\gdal_HDF4.dll;.\gdalplugins\Release\gdal_PostGISRaster.dll;.\gdalplugins\Release\gdal_JP2OpenJPEG.dll;.\gdalplugins\Release\gdal_EXR.dll;.\gdalplugins\Release\gdal_PCRaster.dll;.\gdalplugins\Release\gdal_MrSID.dll;.\gdalplugins\Release\gdal_ECW_JP2ECW.dll;.\gdalplugins\Release\ogr_WAsP.dll;.\gdalplugins\Release\ogr_GMLAS.dll;.\gdalplugins\Release\ogr_FileGDB.dll;.\gdalplugins\Release\ogr_LIBKML.dll;.\gdalplugins\Release\ogr_PLSCENES.dll;.\gdalplugins\Release\ogr_Elastic.dll;.\gdalplugins\Release\ogr_VFK.dll;.\gdalplugins\Release\ogr_Carto.dll;.\gdalplugins\Release\ogr_PG.dll;.\gdalplugins\Release\ogr_MSSQLSpatial.dll;.\gdalplugins\Release\ogr_ODBC.dll;.\gdalplugins\Release\ogr_XLS.dll;.\gdalplugins\Release\ogr_CAD.dll;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\CMakeFiles\gdal_plugins</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\CMakeFiles\gdal_plugins</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\gdalplugins\MinSizeRel\gdal_PCIDSK.dll;.\gdalplugins\MinSizeRel\gdal_PDF.dll;.\gdalplugins\MinSizeRel\gdal_PNG.dll;.\gdalplugins\MinSizeRel\gdal_HDF5.dll;.\gdalplugins\MinSizeRel\gdal_WMS.dll;.\gdalplugins\MinSizeRel\gdal_WEBP.dll;.\gdalplugins\MinSizeRel\gdal_HDF4.dll;.\gdalplugins\MinSizeRel\gdal_PostGISRaster.dll;.\gdalplugins\MinSizeRel\gdal_JP2OpenJPEG.dll;.\gdalplugins\MinSizeRel\gdal_EXR.dll;.\gdalplugins\MinSizeRel\gdal_PCRaster.dll;.\gdalplugins\MinSizeRel\gdal_MrSID.dll;.\gdalplugins\MinSizeRel\gdal_ECW_JP2ECW.dll;.\gdalplugins\MinSizeRel\ogr_WAsP.dll;.\gdalplugins\MinSizeRel\ogr_GMLAS.dll;.\gdalplugins\MinSizeRel\ogr_FileGDB.dll;.\gdalplugins\MinSizeRel\ogr_LIBKML.dll;.\gdalplugins\MinSizeRel\ogr_PLSCENES.dll;.\gdalplugins\MinSizeRel\ogr_Elastic.dll;.\gdalplugins\MinSizeRel\ogr_VFK.dll;.\gdalplugins\MinSizeRel\ogr_Carto.dll;.\gdalplugins\MinSizeRel\ogr_PG.dll;.\gdalplugins\MinSizeRel\ogr_MSSQLSpatial.dll;.\gdalplugins\MinSizeRel\ogr_ODBC.dll;.\gdalplugins\MinSizeRel\ogr_XLS.dll;.\gdalplugins\MinSizeRel\ogr_CAD.dll;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\CMakeFiles\gdal_plugins</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\gdalplugins\RelWithDebInfo\gdal_PCIDSK.dll;.\gdalplugins\RelWithDebInfo\gdal_PDF.dll;.\gdalplugins\RelWithDebInfo\gdal_PNG.dll;.\gdalplugins\RelWithDebInfo\gdal_HDF5.dll;.\gdalplugins\RelWithDebInfo\gdal_WMS.dll;.\gdalplugins\RelWithDebInfo\gdal_WEBP.dll;.\gdalplugins\RelWithDebInfo\gdal_HDF4.dll;.\gdalplugins\RelWithDebInfo\gdal_PostGISRaster.dll;.\gdalplugins\RelWithDebInfo\gdal_JP2OpenJPEG.dll;.\gdalplugins\RelWithDebInfo\gdal_EXR.dll;.\gdalplugins\RelWithDebInfo\gdal_PCRaster.dll;.\gdalplugins\RelWithDebInfo\gdal_MrSID.dll;.\gdalplugins\RelWithDebInfo\gdal_ECW_JP2ECW.dll;.\gdalplugins\RelWithDebInfo\ogr_WAsP.dll;.\gdalplugins\RelWithDebInfo\ogr_GMLAS.dll;.\gdalplugins\RelWithDebInfo\ogr_FileGDB.dll;.\gdalplugins\RelWithDebInfo\ogr_LIBKML.dll;.\gdalplugins\RelWithDebInfo\ogr_PLSCENES.dll;.\gdalplugins\RelWithDebInfo\ogr_Elastic.dll;.\gdalplugins\RelWithDebInfo\ogr_VFK.dll;.\gdalplugins\RelWithDebInfo\ogr_Carto.dll;.\gdalplugins\RelWithDebInfo\ogr_PG.dll;.\gdalplugins\RelWithDebInfo\ogr_MSSQLSpatial.dll;.\gdalplugins\RelWithDebInfo\ogr_ODBC.dll;.\gdalplugins\RelWithDebInfo\ogr_XLS.dll;.\gdalplugins\RelWithDebInfo\ogr_CAD.dll;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\CMakeFiles\gdal_plugins</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\gdal_plugins">
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

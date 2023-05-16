@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include=".\org\gdal\gdal\gdal_wrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\org\gdal\gdalconst\gdalconst_wrap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\org\gdal\ogr\ogr_wrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\org\gdal\osr\osr_wrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\9b51080c3f6c82da44812147fcb1bac5\gdal_wrap.cpp.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\edb6bd6ce63ced240ba2ba6714cab40a\gdalconst_wrap.c.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\da47dc16242492b905081ccb9fcfc1f9\ogr_wrap.cpp.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\9c7fd64f965aa9c603b021ffb112bc83\osr_wrap.cpp.rule" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{401AE35D-CBD1-35CB-AAB2-FDA006E23AA3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AFBF3D6C-1CBC-3397-9CD5-82BB52C95300}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

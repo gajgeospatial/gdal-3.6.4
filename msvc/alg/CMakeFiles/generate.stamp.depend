@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeDependentOption.cmake
+N:/Development/Dev_Base/gdal-3.6.4/alg/CMakeLists.txt
+N:/Development/Dev_Base/gdal-3.6.4/cmake/helpers/GdalDriverHelper.cmake
+N:/Development/Dev_Base/gdal-3.6.4/cmake/helpers/GdalStandardIncludes.cmake
+N:/Development/Dev_Base/gdal-3.6.4/cmake/helpers/TargetPublicHeader.cmake

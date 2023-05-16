@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{488ACDF1-B648-3B33-8E8B-ED5F4F6C8B87}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>java_binding</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\33daa1a6876c8d0a2380c28e57bbcf0b\javadoc.zip.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating javadoc.zip</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating javadoc.zip</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating javadoc.zip</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -DSOURCE_DIR=N:/Development/Dev_Base/gdal-3.6.4/swig/java -DBUILD_DIR=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -DJava_JAVADOC_EXECUTABLE=C:/Program Files/Java/jdk-11.0.9/bin/javadoc.exe" -DADD_JAVADOC_EXE=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java/Debug/add_javadoc.exe -DGDAL_VERSION=3.6.4 -P ..\..\..\swig\java\build_java_doc.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -DSOURCE_DIR=N:/Development/Dev_Base/gdal-3.6.4/swig/java -DBUILD_DIR=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -DJava_JAVADOC_EXECUTABLE=C:/Program Files/Java/jdk-11.0.9/bin/javadoc.exe" -DADD_JAVADOC_EXE=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java/Debug/add_javadoc.exe -DGDAL_VERSION=3.6.4 -P ..\..\..\swig\java\build_java_doc.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -DSOURCE_DIR=N:/Development/Dev_Base/gdal-3.6.4/swig/java -DBUILD_DIR=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -DJava_JAVADOC_EXECUTABLE=C:/Program Files/Java/jdk-11.0.9/bin/javadoc.exe" -DADD_JAVADOC_EXE=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java/Debug/add_javadoc.exe -DGDAL_VERSION=3.6.4 -P ..\..\..\swig\java\build_java_doc.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;.\Debug\add_javadoc.exe;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;.\Debug\add_javadoc.exe;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;.\Debug\add_javadoc.exe;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\javadoc.zip</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\javadoc.zip</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\javadoc.zip</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating javadoc.zip</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating javadoc.zip</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating javadoc.zip</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -DSOURCE_DIR=N:/Development/Dev_Base/gdal-3.6.4/swig/java -DBUILD_DIR=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -DJava_JAVADOC_EXECUTABLE=C:/Program Files/Java/jdk-11.0.9/bin/javadoc.exe" -DADD_JAVADOC_EXE=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java/Release/add_javadoc.exe -DGDAL_VERSION=3.6.4 -P ..\..\..\swig\java\build_java_doc.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -DSOURCE_DIR=N:/Development/Dev_Base/gdal-3.6.4/swig/java -DBUILD_DIR=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -DJava_JAVADOC_EXECUTABLE=C:/Program Files/Java/jdk-11.0.9/bin/javadoc.exe" -DADD_JAVADOC_EXE=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java/Release/add_javadoc.exe -DGDAL_VERSION=3.6.4 -P ..\..\..\swig\java\build_java_doc.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -DSOURCE_DIR=N:/Development/Dev_Base/gdal-3.6.4/swig/java -DBUILD_DIR=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -DJava_JAVADOC_EXECUTABLE=C:/Program Files/Java/jdk-11.0.9/bin/javadoc.exe" -DADD_JAVADOC_EXE=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java/Release/add_javadoc.exe -DGDAL_VERSION=3.6.4 -P ..\..\..\swig\java\build_java_doc.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;.\Release\add_javadoc.exe;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;.\Release\add_javadoc.exe;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;.\Release\add_javadoc.exe;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\javadoc.zip</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\javadoc.zip</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\javadoc.zip</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating javadoc.zip</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -DSOURCE_DIR=N:/Development/Dev_Base/gdal-3.6.4/swig/java -DBUILD_DIR=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -DJava_JAVADOC_EXECUTABLE=C:/Program Files/Java/jdk-11.0.9/bin/javadoc.exe" -DADD_JAVADOC_EXE=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java/MinSizeRel/add_javadoc.exe -DGDAL_VERSION=3.6.4 -P ..\..\..\swig\java\build_java_doc.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;.\MinSizeRel\add_javadoc.exe;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\javadoc.zip</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating javadoc.zip</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -DSOURCE_DIR=N:/Development/Dev_Base/gdal-3.6.4/swig/java -DBUILD_DIR=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -DJava_JAVADOC_EXECUTABLE=C:/Program Files/Java/jdk-11.0.9/bin/javadoc.exe" -DADD_JAVADOC_EXE=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java/RelWithDebInfo/add_javadoc.exe -DGDAL_VERSION=3.6.4 -P ..\..\..\swig\java\build_java_doc.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;.\RelWithDebInfo\add_javadoc.exe;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\javadoc.zip</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\33daa1a6876c8d0a2380c28e57bbcf0b\gdal.jar.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating gdal.jar, build/maven/gdal-3.6.4.jar, build/maven/gdal-3.6.4-sources.jar, build/maven/gdal-3.6.4.pom, build/maven/gdal-3.6.4-javadoc.jar</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating gdal.jar, build/maven/gdal-3.6.4.jar, build/maven/gdal-3.6.4-sources.jar, build/maven/gdal-3.6.4.pom, build/maven/gdal-3.6.4-javadoc.jar</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating gdal.jar, build/maven/gdal-3.6.4.jar, build/maven/gdal-3.6.4-sources.jar, build/maven/gdal-3.6.4.pom, build/maven/gdal-3.6.4-javadoc.jar</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E make_directory .\java
+if %errorlevel% neq 0 goto :cmEnd
+call ..\..\..\..\..\apache-ant-1.9.1\bin\ant.bat maven -f ..\..\..\swig\java\build.xml -Dskip_make_doc=true -Dbuild_dir=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -Dversion_filename=N:/Development/Dev_Base/gdal-3.6.4/VERSION -Dsource_apps=N:/Development/Dev_Base/gdal-3.6.4/swig/java/apps
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E make_directory .\java
+if %errorlevel% neq 0 goto :cmEnd
+call ..\..\..\..\..\apache-ant-1.9.1\bin\ant.bat maven -f ..\..\..\swig\java\build.xml -Dskip_make_doc=true -Dbuild_dir=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -Dversion_filename=N:/Development/Dev_Base/gdal-3.6.4/VERSION -Dsource_apps=N:/Development/Dev_Base/gdal-3.6.4/swig/java/apps
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E make_directory .\java
+if %errorlevel% neq 0 goto :cmEnd
+call ..\..\..\..\..\apache-ant-1.9.1\bin\ant.bat maven -f ..\..\..\swig\java\build.xml -Dskip_make_doc=true -Dbuild_dir=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -Dversion_filename=N:/Development/Dev_Base/gdal-3.6.4/VERSION -Dsource_apps=N:/Development/Dev_Base/gdal-3.6.4/swig/java/apps
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\javadoc.zip;.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;..\..\..\swig\java\build.xml;..\..\..\swig\java\apps\GDALContour.java;..\..\..\swig\java\apps\GDALGrid.java;..\..\..\swig\java\apps\GDALOverviews.java;..\..\..\swig\java\apps\GDALProximity.java;..\..\..\swig\java\apps\GDALTestIO.java;..\..\..\swig\java\apps\GDALtest.java;..\..\..\swig\java\apps\OGRFeature.java;..\..\..\swig\java\apps\OGRTestGC.java;..\..\..\swig\java\apps\OSRTest.java;..\..\..\swig\java\apps\OSRTransform.java;..\..\..\swig\java\apps\ReadXML.java;..\..\..\swig\java\apps\WKT2WKB.java;..\..\..\swig\java\apps\gdalinfo.java;..\..\..\swig\java\apps\gdalmajorobject.java;..\..\..\swig\java\apps\gdaltransformer.java;..\..\..\swig\java\apps\multireadtest.java;..\..\..\swig\java\apps\ogr2ogr.java;..\..\..\swig\java\apps\ogr2ogr_new.java;..\..\..\swig\java\apps\ogrinfo.java;..\..\..\swig\java\apps\ogrtindex.java;..\..\..\swig\java\apps\testgetpoints.java;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\javadoc.zip;.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;..\..\..\swig\java\build.xml;..\..\..\swig\java\apps\GDALContour.java;..\..\..\swig\java\apps\GDALGrid.java;..\..\..\swig\java\apps\GDALOverviews.java;..\..\..\swig\java\apps\GDALProximity.java;..\..\..\swig\java\apps\GDALTestIO.java;..\..\..\swig\java\apps\GDALtest.java;..\..\..\swig\java\apps\OGRFeature.java;..\..\..\swig\java\apps\OGRTestGC.java;..\..\..\swig\java\apps\OSRTest.java;..\..\..\swig\java\apps\OSRTransform.java;..\..\..\swig\java\apps\ReadXML.java;..\..\..\swig\java\apps\WKT2WKB.java;..\..\..\swig\java\apps\gdalinfo.java;..\..\..\swig\java\apps\gdalmajorobject.java;..\..\..\swig\java\apps\gdaltransformer.java;..\..\..\swig\java\apps\multireadtest.java;..\..\..\swig\java\apps\ogr2ogr.java;..\..\..\swig\java\apps\ogr2ogr_new.java;..\..\..\swig\java\apps\ogrinfo.java;..\..\..\swig\java\apps\ogrtindex.java;..\..\..\swig\java\apps\testgetpoints.java;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\javadoc.zip;.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;..\..\..\swig\java\build.xml;..\..\..\swig\java\apps\GDALContour.java;..\..\..\swig\java\apps\GDALGrid.java;..\..\..\swig\java\apps\GDALOverviews.java;..\..\..\swig\java\apps\GDALProximity.java;..\..\..\swig\java\apps\GDALTestIO.java;..\..\..\swig\java\apps\GDALtest.java;..\..\..\swig\java\apps\OGRFeature.java;..\..\..\swig\java\apps\OGRTestGC.java;..\..\..\swig\java\apps\OSRTest.java;..\..\..\swig\java\apps\OSRTransform.java;..\..\..\swig\java\apps\ReadXML.java;..\..\..\swig\java\apps\WKT2WKB.java;..\..\..\swig\java\apps\gdalinfo.java;..\..\..\swig\java\apps\gdalmajorobject.java;..\..\..\swig\java\apps\gdaltransformer.java;..\..\..\swig\java\apps\multireadtest.java;..\..\..\swig\java\apps\ogr2ogr.java;..\..\..\swig\java\apps\ogr2ogr_new.java;..\..\..\swig\java\apps\ogrinfo.java;..\..\..\swig\java\apps\ogrtindex.java;..\..\..\swig\java\apps\testgetpoints.java;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\gdal.jar;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\gdal.jar;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\gdal.jar;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating gdal.jar, build/maven/gdal-3.6.4.jar, build/maven/gdal-3.6.4-sources.jar, build/maven/gdal-3.6.4.pom, build/maven/gdal-3.6.4-javadoc.jar</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating gdal.jar, build/maven/gdal-3.6.4.jar, build/maven/gdal-3.6.4-sources.jar, build/maven/gdal-3.6.4.pom, build/maven/gdal-3.6.4-javadoc.jar</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating gdal.jar, build/maven/gdal-3.6.4.jar, build/maven/gdal-3.6.4-sources.jar, build/maven/gdal-3.6.4.pom, build/maven/gdal-3.6.4-javadoc.jar</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E make_directory .\java
+if %errorlevel% neq 0 goto :cmEnd
+call ..\..\..\..\..\apache-ant-1.9.1\bin\ant.bat maven -f ..\..\..\swig\java\build.xml -Dskip_make_doc=true -Dbuild_dir=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -Dversion_filename=N:/Development/Dev_Base/gdal-3.6.4/VERSION -Dsource_apps=N:/Development/Dev_Base/gdal-3.6.4/swig/java/apps
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E make_directory .\java
+if %errorlevel% neq 0 goto :cmEnd
+call ..\..\..\..\..\apache-ant-1.9.1\bin\ant.bat maven -f ..\..\..\swig\java\build.xml -Dskip_make_doc=true -Dbuild_dir=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -Dversion_filename=N:/Development/Dev_Base/gdal-3.6.4/VERSION -Dsource_apps=N:/Development/Dev_Base/gdal-3.6.4/swig/java/apps
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E make_directory .\java
+if %errorlevel% neq 0 goto :cmEnd
+call ..\..\..\..\..\apache-ant-1.9.1\bin\ant.bat maven -f ..\..\..\swig\java\build.xml -Dskip_make_doc=true -Dbuild_dir=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -Dversion_filename=N:/Development/Dev_Base/gdal-3.6.4/VERSION -Dsource_apps=N:/Development/Dev_Base/gdal-3.6.4/swig/java/apps
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\javadoc.zip;.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;..\..\..\swig\java\build.xml;..\..\..\swig\java\apps\GDALContour.java;..\..\..\swig\java\apps\GDALGrid.java;..\..\..\swig\java\apps\GDALOverviews.java;..\..\..\swig\java\apps\GDALProximity.java;..\..\..\swig\java\apps\GDALTestIO.java;..\..\..\swig\java\apps\GDALtest.java;..\..\..\swig\java\apps\OGRFeature.java;..\..\..\swig\java\apps\OGRTestGC.java;..\..\..\swig\java\apps\OSRTest.java;..\..\..\swig\java\apps\OSRTransform.java;..\..\..\swig\java\apps\ReadXML.java;..\..\..\swig\java\apps\WKT2WKB.java;..\..\..\swig\java\apps\gdalinfo.java;..\..\..\swig\java\apps\gdalmajorobject.java;..\..\..\swig\java\apps\gdaltransformer.java;..\..\..\swig\java\apps\multireadtest.java;..\..\..\swig\java\apps\ogr2ogr.java;..\..\..\swig\java\apps\ogr2ogr_new.java;..\..\..\swig\java\apps\ogrinfo.java;..\..\..\swig\java\apps\ogrtindex.java;..\..\..\swig\java\apps\testgetpoints.java;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\javadoc.zip;.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;..\..\..\swig\java\build.xml;..\..\..\swig\java\apps\GDALContour.java;..\..\..\swig\java\apps\GDALGrid.java;..\..\..\swig\java\apps\GDALOverviews.java;..\..\..\swig\java\apps\GDALProximity.java;..\..\..\swig\java\apps\GDALTestIO.java;..\..\..\swig\java\apps\GDALtest.java;..\..\..\swig\java\apps\OGRFeature.java;..\..\..\swig\java\apps\OGRTestGC.java;..\..\..\swig\java\apps\OSRTest.java;..\..\..\swig\java\apps\OSRTransform.java;..\..\..\swig\java\apps\ReadXML.java;..\..\..\swig\java\apps\WKT2WKB.java;..\..\..\swig\java\apps\gdalinfo.java;..\..\..\swig\java\apps\gdalmajorobject.java;..\..\..\swig\java\apps\gdaltransformer.java;..\..\..\swig\java\apps\multireadtest.java;..\..\..\swig\java\apps\ogr2ogr.java;..\..\..\swig\java\apps\ogr2ogr_new.java;..\..\..\swig\java\apps\ogrinfo.java;..\..\..\swig\java\apps\ogrtindex.java;..\..\..\swig\java\apps\testgetpoints.java;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\javadoc.zip;.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;..\..\..\swig\java\build.xml;..\..\..\swig\java\apps\GDALContour.java;..\..\..\swig\java\apps\GDALGrid.java;..\..\..\swig\java\apps\GDALOverviews.java;..\..\..\swig\java\apps\GDALProximity.java;..\..\..\swig\java\apps\GDALTestIO.java;..\..\..\swig\java\apps\GDALtest.java;..\..\..\swig\java\apps\OGRFeature.java;..\..\..\swig\java\apps\OGRTestGC.java;..\..\..\swig\java\apps\OSRTest.java;..\..\..\swig\java\apps\OSRTransform.java;..\..\..\swig\java\apps\ReadXML.java;..\..\..\swig\java\apps\WKT2WKB.java;..\..\..\swig\java\apps\gdalinfo.java;..\..\..\swig\java\apps\gdalmajorobject.java;..\..\..\swig\java\apps\gdaltransformer.java;..\..\..\swig\java\apps\multireadtest.java;..\..\..\swig\java\apps\ogr2ogr.java;..\..\..\swig\java\apps\ogr2ogr_new.java;..\..\..\swig\java\apps\ogrinfo.java;..\..\..\swig\java\apps\ogrtindex.java;..\..\..\swig\java\apps\testgetpoints.java;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\gdal.jar;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\gdal.jar;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\gdal.jar;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating gdal.jar, build/maven/gdal-3.6.4.jar, build/maven/gdal-3.6.4-sources.jar, build/maven/gdal-3.6.4.pom, build/maven/gdal-3.6.4-javadoc.jar</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E make_directory .\java
+if %errorlevel% neq 0 goto :cmEnd
+call ..\..\..\..\..\apache-ant-1.9.1\bin\ant.bat maven -f ..\..\..\swig\java\build.xml -Dskip_make_doc=true -Dbuild_dir=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -Dversion_filename=N:/Development/Dev_Base/gdal-3.6.4/VERSION -Dsource_apps=N:/Development/Dev_Base/gdal-3.6.4/swig/java/apps
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\javadoc.zip;.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;..\..\..\swig\java\build.xml;..\..\..\swig\java\apps\GDALContour.java;..\..\..\swig\java\apps\GDALGrid.java;..\..\..\swig\java\apps\GDALOverviews.java;..\..\..\swig\java\apps\GDALProximity.java;..\..\..\swig\java\apps\GDALTestIO.java;..\..\..\swig\java\apps\GDALtest.java;..\..\..\swig\java\apps\OGRFeature.java;..\..\..\swig\java\apps\OGRTestGC.java;..\..\..\swig\java\apps\OSRTest.java;..\..\..\swig\java\apps\OSRTransform.java;..\..\..\swig\java\apps\ReadXML.java;..\..\..\swig\java\apps\WKT2WKB.java;..\..\..\swig\java\apps\gdalinfo.java;..\..\..\swig\java\apps\gdalmajorobject.java;..\..\..\swig\java\apps\gdaltransformer.java;..\..\..\swig\java\apps\multireadtest.java;..\..\..\swig\java\apps\ogr2ogr.java;..\..\..\swig\java\apps\ogr2ogr_new.java;..\..\..\swig\java\apps\ogrinfo.java;..\..\..\swig\java\apps\ogrtindex.java;..\..\..\swig\java\apps\testgetpoints.java;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\gdal.jar;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating gdal.jar, build/maven/gdal-3.6.4.jar, build/maven/gdal-3.6.4-sources.jar, build/maven/gdal-3.6.4.pom, build/maven/gdal-3.6.4-javadoc.jar</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E make_directory .\java
+if %errorlevel% neq 0 goto :cmEnd
+call ..\..\..\..\..\apache-ant-1.9.1\bin\ant.bat maven -f ..\..\..\swig\java\build.xml -Dskip_make_doc=true -Dbuild_dir=N:/Development/Dev_Base/gdal-3.6.4/msvc/swig/java -Dversion_filename=N:/Development/Dev_Base/gdal-3.6.4/VERSION -Dsource_apps=N:/Development/Dev_Base/gdal-3.6.4/swig/java/apps
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\javadoc.zip;.\org\gdal\gdal\gdal_wrap.cpp;.\org\gdal\gdalconst\gdalconst_wrap.c;.\org\gdal\ogr\ogr_wrap.cpp;.\org\gdal\osr\osr_wrap.cpp;..\..\..\swig\java\build.xml;..\..\..\swig\java\apps\GDALContour.java;..\..\..\swig\java\apps\GDALGrid.java;..\..\..\swig\java\apps\GDALOverviews.java;..\..\..\swig\java\apps\GDALProximity.java;..\..\..\swig\java\apps\GDALTestIO.java;..\..\..\swig\java\apps\GDALtest.java;..\..\..\swig\java\apps\OGRFeature.java;..\..\..\swig\java\apps\OGRTestGC.java;..\..\..\swig\java\apps\OSRTest.java;..\..\..\swig\java\apps\OSRTransform.java;..\..\..\swig\java\apps\ReadXML.java;..\..\..\swig\java\apps\WKT2WKB.java;..\..\..\swig\java\apps\gdalinfo.java;..\..\..\swig\java\apps\gdalmajorobject.java;..\..\..\swig\java\apps\gdaltransformer.java;..\..\..\swig\java\apps\multireadtest.java;..\..\..\swig\java\apps\ogr2ogr.java;..\..\..\swig\java\apps\ogr2ogr_new.java;..\..\..\swig\java\apps\ogrinfo.java;..\..\..\swig\java\apps\ogrtindex.java;..\..\..\swig\java\apps\testgetpoints.java;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\gdal.jar;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\c45df050166125b404365ba448c3b8c6\java_binding.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\Debug\gdalalljni.dll;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\Debug\gdalalljni.dll;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\Debug\gdalalljni.dll;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\CMakeFiles\java_binding</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\CMakeFiles\java_binding</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\CMakeFiles\java_binding</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release\gdalalljni.dll;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\Release\gdalalljni.dll;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\Release\gdalalljni.dll;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\CMakeFiles\java_binding</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\CMakeFiles\java_binding</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\CMakeFiles\java_binding</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\MinSizeRel\gdalalljni.dll;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\CMakeFiles\java_binding</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\RelWithDebInfo\gdalalljni.dll;.\build\maven\gdal-3.6.4.jar;.\build\maven\gdal-3.6.4-sources.jar;.\build\maven\gdal-3.6.4.pom;.\build\maven\gdal-3.6.4-javadoc.jar;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\CMakeFiles\java_binding</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\java_binding">
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

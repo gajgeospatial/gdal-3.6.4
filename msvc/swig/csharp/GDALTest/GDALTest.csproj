@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <CheckEolTargetFramework>false</CheckEolTargetFramework>
+        <AssemblyVersion>3.6.4</AssemblyVersion>
+        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="N:\Development\Dev_Base\gdal-3.6.4\swig\csharp\apps\GDALTest.cs"></Compile>
+    </ItemGroup>
+</Project>

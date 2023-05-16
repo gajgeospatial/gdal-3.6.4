@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindBISON.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPackageMessage.cmake
+N:/Development/Dev_Base/gdal-3.6.4/cmake/helpers/GdalStandardIncludes.cmake
+N:/Development/Dev_Base/gdal-3.6.4/cmake/helpers/TargetPublicHeader.cmake
+N:/Development/Dev_Base/gdal-3.6.4/ogr/CMakeLists.txt

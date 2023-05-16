@@ -1,0 +1,74 @@
+#!/bin/sh
+CONFIG_LIBS=""-LIBPATH:C:/Program Files/gdal/lib" gdal"
+CONFIG_DEP_LIBS="N:/Development/Dev_Base/curl-7.86.0/msvc/vc143/x64/vs2022_Release/libcurl_imp.lib N:/Development/Dev_Base/win-iconv-1.0.0/msvc/vc143/x64/vs2022_Release/libiconv.lib N:/Development/Dev_Base/cryptopp-8.7.0/vc143/x64/vs2022_Release/cryptopp.lib N:/Development/Dev_Base/liblzma-5.2.5/windows/vc143/x64/vs2022_Release/liblzma.lib N:/Development/Dev_Base/libdeflate-1.18/msvc/vc143/x64/vs2022_Debug/deflate.lib N:/Development/Dev_Base/lz4-1.9.3/msvc/vc143/x64/vs2022_Release/liblz4.lib wbemuuid "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/lib/x64/OpenCL.lib" N:/Development/Dev_Base/qhull-8.1-alpha1/msvc/vc143/x64/vs2022_Release/libqhull.lib N:/Development/Dev_Base/libgeotiff-1.6.0/libgeotiff/msvc/vc143/x64/vs2022_Release/geotiff_i.lib N:/Development/Dev_Base/tiff-4.1.0/msvc/vc143/x64/vs2022_Release/libtiff_i.lib ws2_32 N:/Development/Dev_Base/jpeg-9c/vc143/x64/vs2022_Release/jpeg.lib N:/Development/Dev_Base/lerc-4.0.0/msvc/vc143/x64/vs2022_Release/Lerc.lib N:/Development/Dev_Base/zstd-1.4.5/msvc/vc143/x64/vs2022_Release/zstd.lib N:/Development/Dev_Base/libpng-1.6.37/projects/vstudio/vc143/x64/vs2022_Release/libpng14.lib N:/Development/Dev_Base/giflib-5.0.4/build.vc11/vc143/x64/vs2022_Release/libgiflib-5.0.4.lib N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/vc143/x64/vs2022_Release/netcdf.lib N:/Development/Dev_Base/blosc-1.21.2/msvc/vc143/x64/vs2022_Release/blosc.lib N:/Development/Dev_Base/zlib-1.2.11/vc143/x64/vs2022_Release/zlib.lib N:/Development/Dev_Base/pcre-8.33/msvc/vc143/x64/vs2022_Release/pcre.lib N:/Development/Dev_Base/libspatialite-5.0.1/vc143/x64/vs2022_Release/libspatialite.lib N:/Development/Dev_Base/sqlite-3.41.2/vc143/x64/vs2022_Release/sqlite3.lib N:/Development/Dev_Base/xerces-c-3.2.2/msvc/vc143/x64/vs2022_Release/xerces-c_3.lib legacy_stdio_definitions.lib odbccp32.lib N:/Development/Dev_Base/expat-2.5.0/msvc/vc143/x64/vs2022_Release/expat.lib N:/Development/Dev_Base/libxml2-2.9.9/win32/vc143/x64/vs2022_Release/libxml2.lib N:/Development/Dev_Base/Geos-3.11.1/msvc/vc143/x64/vs2022_Release/geos_c.lib psapi N:/Development/Dev_Base/Proj-9.1.1/msvc/vc143/x64/vs2022_Release/proj.lib N:/Development/Dev_Base/json-c-0.16/msvc/vc143/x64/vs2022_Release/json-c.lib"
+CONFIG_PREFIX=""C:/Program Files/gdal""
+CONFIG_CFLAGS=""-IC:/Program Files/gdal/include""
+CONFIG_DATA=""C:/Program Files/gdal/share/gdal""
+CONFIG_VERSION="3.6.4"
+CONFIG_GNM_ENABLED=no
+CONFIG_FORMATS="JPEG raw GTIFF MEM vrt Derived HFA SDTS NITF GXF CEOS SAR_CEOS XPM DTED JDEM Envisat ELAS FIT L1B RS2 ILWIS RMF Leveller SGI SRTMHGT IDRISI GSG ERS PALSARJaxa DIMAP GFF COSAR PDS ADRG COASP TSX Terragen BLX MSGN TIL R northwood SAGA XYZ ESRIC HF2 KMLSUPEROVERLAY CTG ZMap NGSGEOID IRIS MAP CALS SAFE SENTINEL2 PRF MRF WMTS GRIB BMP TGA STACTA OGCAPI AIGrid ARG USGSDEM OZI PCIDSK SIGDEM RIK STACIT PDF PNG GIF WCS HTTP netCDF Zarr DAAS EEDA HDF5 PLMOSAIC WMS WEBP HDF4 Rasterlite MBTiles PostGISRaster JP2OpenJPEG EXR PCRaster MrSID ECW_JP2ECW MEM geojson TAB Shape KML VRT AVC GML CSV DGN GMT NTF S57 Tiger Geoconcept GeoRSS DXF PGDump GPSBabel EDIGEO SXF OpenFileGDB WAsP Selafin JML VDV FlatGeobuf MapML SDTS GPX GMLAS SVG CSW FileGDB LIBKML NAS PLSCENES WFS NGW Elastic Idrisi PDS SQLite GeoPackage OSM VFK MVT AmigoCloud Carto ILI PG MSSQLSpatial ODBC PGeo XLSX XLS CAD ODS LVBAG"
+usage()
+
+{
+	cat <<EOF
+Usage: gdal-config [OPTIONS]
+Options:
+	[--prefix[=DIR]]
+	[--libs]
+	[--dep-libs]
+	[--cflags]
+	[--datadir]
+	[--version]
+	[--ogr-enabled]
+	[--gnm-enabled]
+	[--formats]
+EOF
+	exit $1
+}
+
+if test $# -eq 0; then
+	usage 1 1>&2
+fi
+
+case $1 in
+  --libs)
+    echo $CONFIG_LIBS
+    ;;
+
+  --dep-libs)
+    echo $CONFIG_DEP_LIBS
+    ;;
+
+  --cflags)
+    echo $CONFIG_CFLAGS
+    ;;
+
+  --datadir)
+    echo $CONFIG_DATA
+    ;;
+
+  --prefix)
+    echo $CONFIG_PREFIX
+    ;;
+
+  --version)
+    echo $CONFIG_VERSION
+    ;;
+
+  --ogr-enabled)
+    echo yes
+    ;;
+
+  --gnm-enabled)
+    echo $CONFIG_GNM_ENABLED
+    ;;
+
+  --formats)
+    echo $CONFIG_FORMATS
+    ;;
+
+  *)
+    usage 1 1>&2
+    ;;
+
+esac

@@ -1,0 +1,1301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1D07D4C2-4332-30A9-A056-5D35EDF89A77}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\gdal-3.6.4\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule N:/Development/Dev_Base/gdal-3.6.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/gdal-3.6.4 -BN:/Development/Dev_Base/gdal-3.6.4/msvc --check-stamp-file N:/Development/Dev_Base/gdal-3.6.4/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-SameMinorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindJavaCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindArmadillo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindEXPAT.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindHDF5.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindJNI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindJava.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindLibLZMA.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenCL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindTIFF.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindXercesC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\CheckCompilerMachineOption.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\CheckCompilerSIMDFeature.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\CheckDependentLibraries.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\GdalGenerateConfig.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\GdalVersion.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\configure.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\CMakeCheckCompilerFlagCommonPatterns.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\Ccache.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\CheckCCompilerFlag.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\CheckCXXCompilerFlag.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\DefineFindPackage2.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\GdalFindModulePath.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\init.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindBRUNSLI.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindBasisU.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindBlosc.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindCryptoPP.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindDeflate.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindECW.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindFYBA.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindFileGDB.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindFreeXL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindGEOS.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindGIF.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindGeoTIFF.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindHDF4.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindHDFS.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindIDB.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindIconv.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindJSONC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindKDU.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLERC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLURATECH.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLZ4.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLibKML.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMONGOCXX.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMRSID.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMSSQL_NCLI.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMSSQL_ODBC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMySQL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindNetCDF.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindODBC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindODBCCPP.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOGDI.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOpenCAD.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOpenEXR.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOpenJPEG.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOracle.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPCRE.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPCRE2.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPROJ.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPodofo.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPoppler.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPostgreSQL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindQHULL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindRASTERLITE2.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSFCGAL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSPATIALITE.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSQLite3.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSWIG.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindShapelib.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindTEIGHA.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindWebP.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindZSTD.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\thirdparty\FindCSharp.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\thirdparty\FindDotnet.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\thirdparty\SystemSummary.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\GDALConfig.cmake.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\cpl_config.h.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\gdal-config.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\gdal.pc.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\gdal_def.h.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\uninstall.cmake.in;N:\Development\Dev_Base\gdal-3.6.4\gdal.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeCCompiler.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeSystem.cmake;N:\Development\Dev_Base\sqlite-3.41.2\vc143\x64\vs2022_Release\sqlite3.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule N:/Development/Dev_Base/gdal-3.6.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/gdal-3.6.4 -BN:/Development/Dev_Base/gdal-3.6.4/msvc --check-stamp-file N:/Development/Dev_Base/gdal-3.6.4/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-SameMinorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindJavaCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindArmadillo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindEXPAT.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindHDF5.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindJNI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindJava.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindLibLZMA.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenCL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindTIFF.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindXercesC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\CheckCompilerMachineOption.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\CheckCompilerSIMDFeature.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\CheckDependentLibraries.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\GdalGenerateConfig.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\GdalVersion.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\configure.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\CMakeCheckCompilerFlagCommonPatterns.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\Ccache.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\CheckCCompilerFlag.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\CheckCXXCompilerFlag.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\DefineFindPackage2.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\GdalFindModulePath.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\init.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindBRUNSLI.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindBasisU.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindBlosc.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindCryptoPP.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindDeflate.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindECW.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindFYBA.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindFileGDB.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindFreeXL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindGEOS.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindGIF.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindGeoTIFF.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindHDF4.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindHDFS.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindIDB.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindIconv.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindJSONC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindKDU.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLERC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLURATECH.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLZ4.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLibKML.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMONGOCXX.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMRSID.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMSSQL_NCLI.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMSSQL_ODBC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMySQL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindNetCDF.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindODBC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindODBCCPP.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOGDI.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOpenCAD.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOpenEXR.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOpenJPEG.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOracle.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPCRE.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPCRE2.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPROJ.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPodofo.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPoppler.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPostgreSQL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindQHULL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindRASTERLITE2.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSFCGAL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSPATIALITE.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSQLite3.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSWIG.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindShapelib.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindTEIGHA.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindWebP.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindZSTD.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\thirdparty\FindCSharp.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\thirdparty\FindDotnet.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\thirdparty\SystemSummary.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\GDALConfig.cmake.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\cpl_config.h.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\gdal-config.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\gdal.pc.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\gdal_def.h.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\uninstall.cmake.in;N:\Development\Dev_Base\gdal-3.6.4\gdal.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeCCompiler.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeSystem.cmake;N:\Development\Dev_Base\sqlite-3.41.2\vc143\x64\vs2022_Release\sqlite3.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule N:/Development/Dev_Base/gdal-3.6.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/gdal-3.6.4 -BN:/Development/Dev_Base/gdal-3.6.4/msvc --check-stamp-file N:/Development/Dev_Base/gdal-3.6.4/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-SameMinorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindJavaCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindArmadillo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindEXPAT.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindHDF5.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindJNI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindJava.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindLibLZMA.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenCL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindTIFF.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindXercesC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\CheckCompilerMachineOption.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\CheckCompilerSIMDFeature.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\CheckDependentLibraries.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\GdalGenerateConfig.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\GdalVersion.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\configure.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\CMakeCheckCompilerFlagCommonPatterns.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\Ccache.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\CheckCCompilerFlag.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\CheckCXXCompilerFlag.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\DefineFindPackage2.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\GdalFindModulePath.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\init.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindBRUNSLI.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindBasisU.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindBlosc.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindCryptoPP.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindDeflate.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindECW.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindFYBA.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindFileGDB.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindFreeXL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindGEOS.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindGIF.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindGeoTIFF.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindHDF4.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindHDFS.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindIDB.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindIconv.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindJSONC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindKDU.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLERC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLURATECH.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLZ4.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLibKML.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMONGOCXX.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMRSID.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMSSQL_NCLI.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMSSQL_ODBC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMySQL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindNetCDF.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindODBC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindODBCCPP.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOGDI.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOpenCAD.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOpenEXR.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOpenJPEG.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOracle.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPCRE.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPCRE2.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPROJ.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPodofo.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPoppler.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPostgreSQL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindQHULL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindRASTERLITE2.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSFCGAL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSPATIALITE.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSQLite3.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSWIG.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindShapelib.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindTEIGHA.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindWebP.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindZSTD.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\thirdparty\FindCSharp.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\thirdparty\FindDotnet.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\thirdparty\SystemSummary.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\GDALConfig.cmake.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\cpl_config.h.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\gdal-config.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\gdal.pc.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\gdal_def.h.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\uninstall.cmake.in;N:\Development\Dev_Base\gdal-3.6.4\gdal.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeCCompiler.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeSystem.cmake;N:\Development\Dev_Base\sqlite-3.41.2\vc143\x64\vs2022_Release\sqlite3.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule N:/Development/Dev_Base/gdal-3.6.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/gdal-3.6.4 -BN:/Development/Dev_Base/gdal-3.6.4/msvc --check-stamp-file N:/Development/Dev_Base/gdal-3.6.4/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-SameMinorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindJavaCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindArmadillo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindEXPAT.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindHDF5.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindJNI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindJava.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindLibLZMA.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenCL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindTIFF.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindXercesC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\CheckCompilerMachineOption.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\CheckCompilerSIMDFeature.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\CheckDependentLibraries.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\GdalGenerateConfig.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\GdalVersion.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\helpers\configure.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\CMakeCheckCompilerFlagCommonPatterns.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\Ccache.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\CheckCCompilerFlag.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\CheckCXXCompilerFlag.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\DefineFindPackage2.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\GdalFindModulePath.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\init.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindBRUNSLI.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindBasisU.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindBlosc.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindCryptoPP.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindDeflate.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindECW.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindFYBA.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindFileGDB.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindFreeXL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindGEOS.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindGIF.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindGeoTIFF.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindHDF4.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindHDFS.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindIDB.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindIconv.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindJSONC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindKDU.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLERC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLURATECH.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLZ4.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindLibKML.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMONGOCXX.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMRSID.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMSSQL_NCLI.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMSSQL_ODBC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindMySQL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindNetCDF.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindODBC.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindODBCCPP.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOGDI.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOpenCAD.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOpenEXR.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOpenJPEG.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindOracle.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPCRE.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPCRE2.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPROJ.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPodofo.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPoppler.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindPostgreSQL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindQHULL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindRASTERLITE2.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSFCGAL.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSPATIALITE.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSQLite3.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindSWIG.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindShapelib.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindTEIGHA.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindWebP.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\packages\FindZSTD.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\thirdparty\FindCSharp.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\thirdparty\FindDotnet.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\modules\thirdparty\SystemSummary.cmake;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\GDALConfig.cmake.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\cpl_config.h.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\gdal-config.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\gdal.pc.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\gdal_def.h.in;N:\Development\Dev_Base\gdal-3.6.4\cmake\template\uninstall.cmake.in;N:\Development\Dev_Base\gdal-3.6.4\gdal.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeCCompiler.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\3.20.0\CMakeSystem.cmake;N:\Development\Dev_Base\sqlite-3.41.2\vc143\x64\vs2022_Release\sqlite3.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\gdal-3.6.4\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ZERO_CHECK.vcxproj">
+      <Project>{893DA2E9-501B-3379-A1B4-DDB207CFC3E5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\GDAL.vcxproj">
+      <Project>{925280C0-6A3B-3443-9629-1575D5EDDAE2}</Project>
+      <Name>GDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\alg\alg.vcxproj">
+      <Project>{560CDC3D-B68D-365D-BEAF-967D1E3C7500}</Project>
+      <Name>alg</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\appslib.vcxproj">
+      <Project>{0D6D978C-EF09-3AAD-9AC0-79AE3423B9C8}</Project>
+      <Name>appslib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\ods\check_ods_formula_parser_md5.vcxproj">
+      <Project>{07738412-5603-3976-AD19-265EAB615253}</Project>
+      <Name>check_ods_formula_parser_md5</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\check_swq_parser_md5.vcxproj">
+      <Project>{639B070E-DA29-3424-A5E9-0F44ABCAC73F}</Project>
+      <Name>check_swq_parser_md5</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\port\cpl.vcxproj">
+      <Project>{DD62C168-9299-33FC-91CC-94A1114C627E}</Project>
+      <Name>cpl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\port\cpl_iconv.vcxproj">
+      <Project>{14446EFA-39A4-3CC8-ACE8-569882E2D483}</Project>
+      <Name>cpl_iconv</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\pcraster\libcsf\csf.vcxproj">
+      <Project>{5FFF8A56-C1E0-384B-B89D-52C31A3F0DF4}</Project>
+      <Name>csf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\gcore\gcore.vcxproj">
+      <Project>{C41BDCB2-380A-342E-9034-88E0FB325E74}</Project>
+      <Name>gcore</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\gcore\mdreader\gcore_mdreader.vcxproj">
+      <Project>{6712271E-D0DF-3E7E-B2BC-B9E647968FA7}</Project>
+      <Name>gcore_mdreader</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\adrg\gdal_ADRG.vcxproj">
+      <Project>{52403804-7B40-3674-A2BC-EFFF2454A1B5}</Project>
+      <Name>gdal_ADRG</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\aigrid\gdal_AIGrid.vcxproj">
+      <Project>{4E2FFA15-C451-3AA8-8FFA-E053A5791713}</Project>
+      <Name>gdal_AIGrid</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\arg\gdal_ARG.vcxproj">
+      <Project>{DAA27183-20A5-3E7F-AFCA-9CFDA4B1EFD3}</Project>
+      <Name>gdal_ARG</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\blx\gdal_BLX.vcxproj">
+      <Project>{6A289877-1642-34B5-A0CC-1E53F6544011}</Project>
+      <Name>gdal_BLX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\bmp\gdal_BMP.vcxproj">
+      <Project>{6828C6C2-3964-32D8-B69C-7BBAE6AEB953}</Project>
+      <Name>gdal_BMP</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\cals\gdal_CALS.vcxproj">
+      <Project>{86A651FE-814E-3068-A113-658CD9ECFB17}</Project>
+      <Name>gdal_CALS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\ceos\gdal_CEOS.vcxproj">
+      <Project>{DE5248FC-3367-3C28-B693-76E34C530EC5}</Project>
+      <Name>gdal_CEOS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\coasp\gdal_COASP.vcxproj">
+      <Project>{8EA0EA87-CBEB-3BCC-8BA2-C6B94A307776}</Project>
+      <Name>gdal_COASP</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\cosar\gdal_COSAR.vcxproj">
+      <Project>{EFA592FE-C307-3153-9F98-B21A7B97128F}</Project>
+      <Name>gdal_COSAR</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\ctg\gdal_CTG.vcxproj">
+      <Project>{0D3978D7-E52D-3437-820B-43077B24805D}</Project>
+      <Name>gdal_CTG</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\daas\gdal_DAAS.vcxproj">
+      <Project>{AA87F679-3711-33B6-8604-5CA1C544E428}</Project>
+      <Name>gdal_DAAS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\dimap\gdal_DIMAP.vcxproj">
+      <Project>{3CEEBDCC-E950-3428-BDFC-2DC68EAA8DF2}</Project>
+      <Name>gdal_DIMAP</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\dted\gdal_DTED.vcxproj">
+      <Project>{F6458946-184B-370D-95C1-25D89421A638}</Project>
+      <Name>gdal_DTED</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\derived\gdal_Derived.vcxproj">
+      <Project>{391D79B0-CE9F-35D4-AAB2-E4E9F606E326}</Project>
+      <Name>gdal_Derived</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\ecw\gdal_ECW_JP2ECW.vcxproj">
+      <Project>{698F6DDD-7E5B-3C53-B448-870A2C072D50}</Project>
+      <Name>gdal_ECW_JP2ECW</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\eeda\gdal_EEDA.vcxproj">
+      <Project>{C17493AA-0314-389F-AC59-4CD4A1845DBC}</Project>
+      <Name>gdal_EEDA</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\elas\gdal_ELAS.vcxproj">
+      <Project>{A13CF719-AFC8-3647-A6BD-CAA332ACB676}</Project>
+      <Name>gdal_ELAS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\ers\gdal_ERS.vcxproj">
+      <Project>{2325D6F5-AC55-36C8-8D2F-D6F1232117FB}</Project>
+      <Name>gdal_ERS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\esric\gdal_ESRIC.vcxproj">
+      <Project>{8870359A-58E0-39CB-9C1F-897D5B503130}</Project>
+      <Name>gdal_ESRIC</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\exr\gdal_EXR.vcxproj">
+      <Project>{687B52C2-11A0-3C90-BA55-FAE12385A872}</Project>
+      <Name>gdal_EXR</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\envisat\gdal_Envisat.vcxproj">
+      <Project>{FDAB4848-82E8-3092-A8D3-5E52399D4445}</Project>
+      <Name>gdal_Envisat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\fit\gdal_FIT.vcxproj">
+      <Project>{76178541-D340-3A15-B116-29F7C0A21143}</Project>
+      <Name>gdal_FIT</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\gff\gdal_GFF.vcxproj">
+      <Project>{EB5EB172-284E-3398-86AF-45A176356B88}</Project>
+      <Name>gdal_GFF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\gif\gdal_GIF.vcxproj">
+      <Project>{D4BDB2F5-BFF2-3D96-BA3A-7B8C7E5AA237}</Project>
+      <Name>gdal_GIF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\grib\gdal_GRIB.vcxproj">
+      <Project>{F4FF304D-E473-30D6-8B54-A256B60569F0}</Project>
+      <Name>gdal_GRIB</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\gsg\gdal_GSG.vcxproj">
+      <Project>{46FE3F1C-8DC9-3E9E-829A-E0C27D3A357C}</Project>
+      <Name>gdal_GSG</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\gtiff\gdal_GTIFF.vcxproj">
+      <Project>{A99E08E7-4691-3EBC-9E22-F8126C81E551}</Project>
+      <Name>gdal_GTIFF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\gxf\gdal_GXF.vcxproj">
+      <Project>{3D683354-97F8-376C-BF2B-3EED44862B9F}</Project>
+      <Name>gdal_GXF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\hdf4\gdal_HDF4.vcxproj">
+      <Project>{5491C8A0-DD7A-3D29-8F94-721F085AA740}</Project>
+      <Name>gdal_HDF4</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\hdf5\gdal_HDF5.vcxproj">
+      <Project>{588F10D7-CED6-36FE-9408-53B019D75FEF}</Project>
+      <Name>gdal_HDF5</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\hf2\gdal_HF2.vcxproj">
+      <Project>{13735BE5-4692-36D4-8B45-7E1714984931}</Project>
+      <Name>gdal_HF2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\hfa\gdal_HFA.vcxproj">
+      <Project>{F7A64320-447E-3D93-9B90-14CA20C2BE1B}</Project>
+      <Name>gdal_HFA</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\wcs\gdal_HTTP.vcxproj">
+      <Project>{DE4B4357-C57F-3676-87DC-E060B3F51BC9}</Project>
+      <Name>gdal_HTTP</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\idrisi\gdal_IDRISI.vcxproj">
+      <Project>{2E807688-0346-3E5E-ACB7-B9746CFDB9E8}</Project>
+      <Name>gdal_IDRISI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\ilwis\gdal_ILWIS.vcxproj">
+      <Project>{CB3B2556-89F6-37D0-A896-482BFCCBA8E9}</Project>
+      <Name>gdal_ILWIS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\iris\gdal_IRIS.vcxproj">
+      <Project>{51564958-CF2B-3C49-9EED-E076D06910E1}</Project>
+      <Name>gdal_IRIS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\jdem\gdal_JDEM.vcxproj">
+      <Project>{F664BF2D-076B-351A-B89B-7FCB1B9E07BA}</Project>
+      <Name>gdal_JDEM</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\openjpeg\gdal_JP2OpenJPEG.vcxproj">
+      <Project>{7C907485-5ED9-3235-B6DF-61B95745E2B2}</Project>
+      <Name>gdal_JP2OpenJPEG</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\jpeg\gdal_JPEG.vcxproj">
+      <Project>{C18A819C-6B80-3CA4-B674-C2C8B9DB4A24}</Project>
+      <Name>gdal_JPEG</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\kmlsuperoverlay\gdal_KMLSUPEROVERLAY.vcxproj">
+      <Project>{B0E7E705-F545-39F6-BFAF-D19B24A8E1AE}</Project>
+      <Name>gdal_KMLSUPEROVERLAY</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\l1b\gdal_L1B.vcxproj">
+      <Project>{57A1D5B8-AD5C-3AEF-A9E1-E30FA3A95AC2}</Project>
+      <Name>gdal_L1B</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\leveller\gdal_Leveller.vcxproj">
+      <Project>{F268B9B1-4F84-304D-B971-CB8F05DC6502}</Project>
+      <Name>gdal_Leveller</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\map\gdal_MAP.vcxproj">
+      <Project>{73180A44-A722-33E2-A429-F985025262F4}</Project>
+      <Name>gdal_MAP</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\mbtiles\gdal_MBTiles.vcxproj">
+      <Project>{E3CF984F-6B9B-3CC2-9CA6-02A7E3F9BC76}</Project>
+      <Name>gdal_MBTiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\mem\gdal_MEM.vcxproj">
+      <Project>{EF251489-5E75-3EA3-BDFF-5E6CFA13E70F}</Project>
+      <Name>gdal_MEM</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\mrf\gdal_MRF.vcxproj">
+      <Project>{F2F388F6-1807-34E8-9574-F91D3BED0FC2}</Project>
+      <Name>gdal_MRF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\msgn\gdal_MSGN.vcxproj">
+      <Project>{6B4F6998-7128-3C33-B7A8-ACE090F5A34E}</Project>
+      <Name>gdal_MSGN</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\mrsid\gdal_MrSID.vcxproj">
+      <Project>{B42BDE77-3203-35D0-94E5-E2159F803459}</Project>
+      <Name>gdal_MrSID</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\ngsgeoid\gdal_NGSGEOID.vcxproj">
+      <Project>{34785BD6-2E8A-3872-897B-FCFFC38E4713}</Project>
+      <Name>gdal_NGSGEOID</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\nitf\gdal_NITF.vcxproj">
+      <Project>{3D1F4593-BC78-3D7F-82C7-F0C47501A416}</Project>
+      <Name>gdal_NITF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\ogcapi\gdal_OGCAPI.vcxproj">
+      <Project>{95EB2145-0440-336F-93E4-613336AC0D11}</Project>
+      <Name>gdal_OGCAPI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\ozi\gdal_OZI.vcxproj">
+      <Project>{D3CF90F7-2258-331C-8585-84CF5A77BB47}</Project>
+      <Name>gdal_OZI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\jaxapalsar\gdal_PALSARJaxa.vcxproj">
+      <Project>{A90FD7EB-B608-38A6-A47A-4C36FBF8CDE4}</Project>
+      <Name>gdal_PALSARJaxa</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\pcidsk\gdal_PCIDSK.vcxproj">
+      <Project>{F2F1E0C9-C909-3902-A1DB-7B7AEEEC1EB2}</Project>
+      <Name>gdal_PCIDSK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\pcraster\gdal_PCRaster.vcxproj">
+      <Project>{DC252F88-A44A-3CF9-BD56-5A84322E3F22}</Project>
+      <Name>gdal_PCRaster</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\pdf\gdal_PDF.vcxproj">
+      <Project>{1E126E18-7743-3666-8042-4EF272B06A0F}</Project>
+      <Name>gdal_PDF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\pds\gdal_PDS.vcxproj">
+      <Project>{145F20DD-02B2-3404-9372-0A6C96453976}</Project>
+      <Name>gdal_PDS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\plmosaic\gdal_PLMOSAIC.vcxproj">
+      <Project>{9A4C6BF6-55C0-3C48-BC5B-886F8BC99721}</Project>
+      <Name>gdal_PLMOSAIC</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\png\gdal_PNG.vcxproj">
+      <Project>{BD8E2545-F90B-3BFF-BA01-4A2773662922}</Project>
+      <Name>gdal_PNG</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\prf\gdal_PRF.vcxproj">
+      <Project>{DC18F574-0E63-3B17-B687-A6D03642DC7B}</Project>
+      <Name>gdal_PRF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\postgisraster\gdal_PostGISRaster.vcxproj">
+      <Project>{A93E93FE-36B0-3379-91D4-1908A4A60D45}</Project>
+      <Name>gdal_PostGISRaster</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\r\gdal_R.vcxproj">
+      <Project>{7941CBFC-677D-35B3-AB70-A94DD55CDC19}</Project>
+      <Name>gdal_R</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\rik\gdal_RIK.vcxproj">
+      <Project>{6ED31C77-F61C-3F7E-83CA-CFBAF8F37EC2}</Project>
+      <Name>gdal_RIK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\rmf\gdal_RMF.vcxproj">
+      <Project>{E588C52D-DACB-34D3-8085-8089EB5594DA}</Project>
+      <Name>gdal_RMF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\rs2\gdal_RS2.vcxproj">
+      <Project>{1E7CF889-5BDC-3103-8007-6EBD5C1A8FC5}</Project>
+      <Name>gdal_RS2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\rasterlite\gdal_Rasterlite.vcxproj">
+      <Project>{70374DB2-00D9-3760-8367-9948C807E0E1}</Project>
+      <Name>gdal_Rasterlite</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\safe\gdal_SAFE.vcxproj">
+      <Project>{61D5BB70-9C7A-3C49-8904-1D952634E62C}</Project>
+      <Name>gdal_SAFE</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\saga\gdal_SAGA.vcxproj">
+      <Project>{911D4C58-B4BC-3D3E-B2D4-B9D229280017}</Project>
+      <Name>gdal_SAGA</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\ceos2\gdal_SAR_CEOS.vcxproj">
+      <Project>{0E02B23B-3BE9-35A6-9F70-AF359D995034}</Project>
+      <Name>gdal_SAR_CEOS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\sdts\gdal_SDTS.vcxproj">
+      <Project>{9A06E018-D1D5-3C62-8194-868F2B65E13C}</Project>
+      <Name>gdal_SDTS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\sentinel2\gdal_SENTINEL2.vcxproj">
+      <Project>{95967688-8F9C-347F-B683-A4D913CC24E3}</Project>
+      <Name>gdal_SENTINEL2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\sgi\gdal_SGI.vcxproj">
+      <Project>{211442AB-FBC9-375F-81FE-9A8D88F2BFF2}</Project>
+      <Name>gdal_SGI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\sigdem\gdal_SIGDEM.vcxproj">
+      <Project>{4FA05BBC-7BE8-3C19-8264-25F93DEAD273}</Project>
+      <Name>gdal_SIGDEM</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\srtmhgt\gdal_SRTMHGT.vcxproj">
+      <Project>{675F0279-B8D0-36FC-82A6-B632D9B0378A}</Project>
+      <Name>gdal_SRTMHGT</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\stacit\gdal_STACIT.vcxproj">
+      <Project>{44AFF31B-8038-3670-8737-149832B4C4F6}</Project>
+      <Name>gdal_STACIT</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\stacta\gdal_STACTA.vcxproj">
+      <Project>{B34F5D7F-B573-367C-9C33-1FE3D889C3A7}</Project>
+      <Name>gdal_STACTA</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\tga\gdal_TGA.vcxproj">
+      <Project>{9D633556-4153-39B3-B21C-F41AC282D1CB}</Project>
+      <Name>gdal_TGA</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\til\gdal_TIL.vcxproj">
+      <Project>{85855386-1AE9-3DF2-8758-64D7283648C3}</Project>
+      <Name>gdal_TIL</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\tsx\gdal_TSX.vcxproj">
+      <Project>{B11D8D8C-9E04-37B7-B6C2-F6DB3E58820D}</Project>
+      <Name>gdal_TSX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\terragen\gdal_Terragen.vcxproj">
+      <Project>{1143E68E-0798-307C-B22C-C035A93930E9}</Project>
+      <Name>gdal_Terragen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\usgsdem\gdal_USGSDEM.vcxproj">
+      <Project>{066F93E5-290A-3437-B85C-53B9514611C1}</Project>
+      <Name>gdal_USGSDEM</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\wcs\gdal_WCS.vcxproj">
+      <Project>{2CFEFC02-4D5C-38F9-9375-BA37CC16D294}</Project>
+      <Name>gdal_WCS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\webp\gdal_WEBP.vcxproj">
+      <Project>{E73C260E-9FB2-3499-B706-78334170D766}</Project>
+      <Name>gdal_WEBP</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\wms\gdal_WMS.vcxproj">
+      <Project>{504313ED-F6EC-3790-83CF-7F2D1EFCE4A5}</Project>
+      <Name>gdal_WMS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\wmts\gdal_WMTS.vcxproj">
+      <Project>{9BA8B874-7F9A-34FD-AE7E-A363AB87BA03}</Project>
+      <Name>gdal_WMTS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\xpm\gdal_XPM.vcxproj">
+      <Project>{3FDBB077-B132-307A-BC25-078DECA01FDE}</Project>
+      <Name>gdal_XPM</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\xyz\gdal_XYZ.vcxproj">
+      <Project>{24C095E5-640D-37F1-A8F5-805269D4DDEC}</Project>
+      <Name>gdal_XYZ</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\zmap\gdal_ZMap.vcxproj">
+      <Project>{001E9BDA-D8B0-3F94-BED8-0B0AB9B0F835}</Project>
+      <Name>gdal_ZMap</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\zarr\gdal_Zarr.vcxproj">
+      <Project>{DCAA44D2-BBF3-3A0D-B62F-C2274AA34DC9}</Project>
+      <Name>gdal_Zarr</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdal_contour.vcxproj">
+      <Project>{0A79FE66-DC40-32AE-9F7D-4A24168E595C}</Project>
+      <Name>gdal_contour</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdal_create.vcxproj">
+      <Project>{4C67D4B8-28FC-3E13-B138-BE7C4FD96257}</Project>
+      <Name>gdal_create</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\gdal_frmts.vcxproj">
+      <Project>{E598747C-4C71-3BAC-A9E9-6BA923240F6D}</Project>
+      <Name>gdal_frmts</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdal_grid.vcxproj">
+      <Project>{73143F08-DEDE-300A-A9A3-488744939442}</Project>
+      <Name>gdal_grid</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\iso8211\gdal_iso8211.vcxproj">
+      <Project>{F9AE6172-8280-3F6D-B75A-9F349CDF2EFE}</Project>
+      <Name>gdal_iso8211</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\netcdf\gdal_netCDF.vcxproj">
+      <Project>{77D065F0-8363-3BCE-8960-F2B54F0973DE}</Project>
+      <Name>gdal_netCDF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\northwood\gdal_northwood.vcxproj">
+      <Project>{E57EB2E6-BBDD-3350-A21F-A2A2B460021F}</Project>
+      <Name>gdal_northwood</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdal_rasterize.vcxproj">
+      <Project>{1300F055-1AB3-3294-BD77-C05E6F93D6CF}</Project>
+      <Name>gdal_rasterize</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\raw\gdal_raw.vcxproj">
+      <Project>{9000E8CE-8C5D-3F9D-AEEA-BBD46CE1CA4E}</Project>
+      <Name>gdal_raw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdal_translate.vcxproj">
+      <Project>{6C456304-8226-308C-81E0-4E08417DBE73}</Project>
+      <Name>gdal_translate</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdal_viewshed.vcxproj">
+      <Project>{6827B86E-45FC-30CA-A7EC-BDE51AF69BB1}</Project>
+      <Name>gdal_viewshed</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\vrt\gdal_vrt.vcxproj">
+      <Project>{902F3656-9BF5-3E3B-84E1-F83FABB8E2FE}</Project>
+      <Name>gdal_vrt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdaladdo.vcxproj">
+      <Project>{DB3F809C-05E5-38D5-9D84-1B83687261BF}</Project>
+      <Name>gdaladdo</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdalbuildvrt.vcxproj">
+      <Project>{ACBD9493-A106-31A6-839B-8B1EA374CEB2}</Project>
+      <Name>gdalbuildvrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdaldem.vcxproj">
+      <Project>{B6A55AF4-2C19-3632-9AFC-45DBD8BBC480}</Project>
+      <Name>gdaldem</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdalenhance.vcxproj">
+      <Project>{2E628A77-7221-31CA-BBCF-E95547C58180}</Project>
+      <Name>gdalenhance</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdalinfo.vcxproj">
+      <Project>{0B43BF1C-85C1-3B79-B195-1CA410FD9830}</Project>
+      <Name>gdalinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdallocationinfo.vcxproj">
+      <Project>{390DF073-9778-3BF5-B47D-C0D7CEDE8E9A}</Project>
+      <Name>gdallocationinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdalmanage.vcxproj">
+      <Project>{1050D0B1-CABA-3ECC-AEB9-FDF72F60AED8}</Project>
+      <Name>gdalmanage</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdalmdiminfo.vcxproj">
+      <Project>{D669617C-84C4-3421-84A0-2AA742C86F16}</Project>
+      <Name>gdalmdiminfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdalmdimtranslate.vcxproj">
+      <Project>{2951174E-4F6D-30B0-8BC8-4C53F700D279}</Project>
+      <Name>gdalmdimtranslate</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdalsrsinfo.vcxproj">
+      <Project>{B2805A65-32C8-38E4-A686-376D733D99CA}</Project>
+      <Name>gdalsrsinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdaltindex.vcxproj">
+      <Project>{A53B2DD0-1E1A-3DE9-BC7E-E2FB22C36B69}</Project>
+      <Name>gdaltindex</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdaltransform.vcxproj">
+      <Project>{2AD755E0-3869-3482-9B90-CF592E02DA4E}</Project>
+      <Name>gdaltransform</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\gdalwarp.vcxproj">
+      <Project>{61E66790-6CDE-3B41-8DD0-83E6093E7DA2}</Project>
+      <Name>gdalwarp</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\mrf\LERCV1\liblercv1.vcxproj">
+      <Project>{760E023C-D54F-39C8-A03D-AD9EA1452BBE}</Project>
+      <Name>liblercv1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\cad\libopencad\libopencad.vcxproj">
+      <Project>{2286CFB1-D5D2-38B9-8A89-8294A2772BF1}</Project>
+      <Name>libopencad</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\nearblack.vcxproj">
+      <Project>{1EEDFB03-75D7-38B6-BB07-B3EB47521F61}</Project>
+      <Name>nearblack</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogr.vcxproj">
+      <Project>{FDAB2F45-651B-3D3A-933D-0E2599C91075}</Project>
+      <Name>ogr</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\ogr2ogr.vcxproj">
+      <Project>{533FB323-2FF6-3720-86D1-6975A675C14C}</Project>
+      <Name>ogr2ogr</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\avc\ogr_AVC.vcxproj">
+      <Project>{80BE4C5D-D7C5-356E-92B9-3CFA74ABFDC0}</Project>
+      <Name>ogr_AVC</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\amigocloud\ogr_AmigoCloud.vcxproj">
+      <Project>{73C45B6B-08C5-3F0E-9969-B41398246238}</Project>
+      <Name>ogr_AmigoCloud</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\cad\ogr_CAD.vcxproj">
+      <Project>{86B40850-967F-3F1E-8EC8-056F31A21A0C}</Project>
+      <Name>ogr_CAD</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\csv\ogr_CSV.vcxproj">
+      <Project>{99C0030A-72A8-346D-B8B5-8D3A92627D80}</Project>
+      <Name>ogr_CSV</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\csw\ogr_CSW.vcxproj">
+      <Project>{8AB6467A-638D-3179-81AE-41E25A9AB19A}</Project>
+      <Name>ogr_CSW</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\carto\ogr_Carto.vcxproj">
+      <Project>{A71AC95A-7BF3-3FCE-B6EF-636CC9A4D265}</Project>
+      <Name>ogr_Carto</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\dgn\ogr_DGN.vcxproj">
+      <Project>{6CF8B821-40CD-33E2-B711-1CF777DD4B1C}</Project>
+      <Name>ogr_DGN</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\dxf\ogr_DXF.vcxproj">
+      <Project>{D0472F53-C5EA-3471-AFEB-ABCF392EF063}</Project>
+      <Name>ogr_DXF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\edigeo\ogr_EDIGEO.vcxproj">
+      <Project>{EB5FF759-D131-334B-B09C-192FC6A700E3}</Project>
+      <Name>ogr_EDIGEO</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\elastic\ogr_Elastic.vcxproj">
+      <Project>{2B9405E9-1BB9-3958-B2D3-68394997C348}</Project>
+      <Name>ogr_Elastic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\filegdb\ogr_FileGDB.vcxproj">
+      <Project>{8764C742-FB63-3320-B3C8-37097332B764}</Project>
+      <Name>ogr_FileGDB</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\flatgeobuf\ogr_FlatGeobuf.vcxproj">
+      <Project>{AD1E9B34-538C-32F2-9438-FFF70267408E}</Project>
+      <Name>ogr_FlatGeobuf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\gml\ogr_GML.vcxproj">
+      <Project>{D9EE693D-D8B4-3212-A42B-C22747616115}</Project>
+      <Name>ogr_GML</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\gmlas\ogr_GMLAS.vcxproj">
+      <Project>{D719AD91-3652-377A-B238-92F9A1B9B6BB}</Project>
+      <Name>ogr_GMLAS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\gmt\ogr_GMT.vcxproj">
+      <Project>{770F00A2-A0E2-30DF-B23E-FFF55EC3895D}</Project>
+      <Name>ogr_GMT</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\gpsbabel\ogr_GPSBabel.vcxproj">
+      <Project>{7456ED00-1AE5-3CED-B6CD-4C720D1B31BC}</Project>
+      <Name>ogr_GPSBabel</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\gpx\ogr_GPX.vcxproj">
+      <Project>{A0761C99-F0FF-3506-ACD6-C37F59E6E587}</Project>
+      <Name>ogr_GPX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\gpkg\ogr_GeoPackage.vcxproj">
+      <Project>{5C8EB7ED-491A-31E5-9AE3-519F6B0C968B}</Project>
+      <Name>ogr_GeoPackage</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\georss\ogr_GeoRSS.vcxproj">
+      <Project>{CF005C9F-C910-3038-8749-06CFE4E3DDFE}</Project>
+      <Name>ogr_GeoRSS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\geoconcept\ogr_Geoconcept.vcxproj">
+      <Project>{E2E3FE65-A1E1-3C4F-8D3B-E1650614CC85}</Project>
+      <Name>ogr_Geoconcept</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\ili\ogr_ILI.vcxproj">
+      <Project>{13E1ABC0-A861-3095-A52C-C2D5848F5C72}</Project>
+      <Name>ogr_ILI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\idrisi\ogr_Idrisi.vcxproj">
+      <Project>{53155F39-869E-31B5-992F-470BBD42BC18}</Project>
+      <Name>ogr_Idrisi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\jml\ogr_JML.vcxproj">
+      <Project>{52242699-8BDB-3B6F-8203-23D576B1A48B}</Project>
+      <Name>ogr_JML</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\kml\ogr_KML.vcxproj">
+      <Project>{6ED06FE3-FFF8-392A-B249-E65C7410358A}</Project>
+      <Name>ogr_KML</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\libkml\ogr_LIBKML.vcxproj">
+      <Project>{5ECCC86A-CBF8-3D3E-8CD5-918B1F69EBA9}</Project>
+      <Name>ogr_LIBKML</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\lvbag\ogr_LVBAG.vcxproj">
+      <Project>{B3FBB478-1703-3E3F-98A3-DEC66801891D}</Project>
+      <Name>ogr_LVBAG</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\mem\ogr_MEM.vcxproj">
+      <Project>{C02FC436-F602-3407-9FC3-E380DD7FD673}</Project>
+      <Name>ogr_MEM</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\mssqlspatial\ogr_MSSQLSpatial.vcxproj">
+      <Project>{A3B21E7F-ACF0-345F-97E3-FA2FC4751DDE}</Project>
+      <Name>ogr_MSSQLSpatial</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\mvt\ogr_MVT.vcxproj">
+      <Project>{31589442-E9B9-3485-B012-2A026E07E5F5}</Project>
+      <Name>ogr_MVT</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\mapml\ogr_MapML.vcxproj">
+      <Project>{4494A5F8-2BA5-360F-AF82-A307C98AC58A}</Project>
+      <Name>ogr_MapML</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\nas\ogr_NAS.vcxproj">
+      <Project>{C15A269D-D85A-3C86-9D39-E535BC1C12DA}</Project>
+      <Name>ogr_NAS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\ngw\ogr_NGW.vcxproj">
+      <Project>{8DDD405F-0206-3A49-982B-6B31ABD34260}</Project>
+      <Name>ogr_NGW</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\ntf\ogr_NTF.vcxproj">
+      <Project>{8F8D8ADB-B6DF-3600-BE7E-3E7B31937F12}</Project>
+      <Name>ogr_NTF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\odbc\ogr_ODBC.vcxproj">
+      <Project>{F118D73B-9010-33F9-9DB1-451B967B4C1C}</Project>
+      <Name>ogr_ODBC</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\ods\ogr_ODS.vcxproj">
+      <Project>{DAAF89BD-D2EB-3D75-BFFA-4933461F8D70}</Project>
+      <Name>ogr_ODS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\osm\ogr_OSM.vcxproj">
+      <Project>{7751968D-D30C-3658-86D0-176279BA5FF8}</Project>
+      <Name>ogr_OSM</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\openfilegdb\ogr_OpenFileGDB.vcxproj">
+      <Project>{2578CA1D-3A91-363B-8A00-CDF99B31CE51}</Project>
+      <Name>ogr_OpenFileGDB</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\pds\ogr_PDS.vcxproj">
+      <Project>{BA6B0881-8A81-34AB-99F4-8770A14D2036}</Project>
+      <Name>ogr_PDS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\pg\ogr_PG.vcxproj">
+      <Project>{6DA0F1CB-2796-30C2-ADC4-C2F0AC2E1B85}</Project>
+      <Name>ogr_PG</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\pgdump\ogr_PGDump.vcxproj">
+      <Project>{1C4D43B3-5251-390B-BA5A-7890B2ADB875}</Project>
+      <Name>ogr_PGDump</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\pgeo\ogr_PGeo.vcxproj">
+      <Project>{DAE9057E-B07B-3418-BC1D-D2953BF1DDD0}</Project>
+      <Name>ogr_PGeo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\plscenes\ogr_PLSCENES.vcxproj">
+      <Project>{2232AE73-18C1-3DC0-8625-F4B17DADAD20}</Project>
+      <Name>ogr_PLSCENES</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\s57\ogr_S57.vcxproj">
+      <Project>{BC9B6FFB-0F08-30F3-A65D-5C7FC6732ACD}</Project>
+      <Name>ogr_S57</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\sdts\ogr_SDTS.vcxproj">
+      <Project>{9A49CA7A-855B-3E6D-9DFA-C87BA7B63ABF}</Project>
+      <Name>ogr_SDTS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\sqlite\ogr_SQLite.vcxproj">
+      <Project>{15E472BB-A1AD-3EEF-8AEF-7E55F5F4B66A}</Project>
+      <Name>ogr_SQLite</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\svg\ogr_SVG.vcxproj">
+      <Project>{3D147EF2-8A69-3A5C-B671-6DF78C8B2B7A}</Project>
+      <Name>ogr_SVG</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\sxf\ogr_SXF.vcxproj">
+      <Project>{3C6883F5-B025-31E9-98BE-29B723680A03}</Project>
+      <Name>ogr_SXF</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\selafin\ogr_Selafin.vcxproj">
+      <Project>{D5877B41-DC7D-3D74-A725-398E1DDDF0DC}</Project>
+      <Name>ogr_Selafin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\shape\ogr_Shape.vcxproj">
+      <Project>{1EA2E54D-07CE-3075-BE05-C1BE50EF39B6}</Project>
+      <Name>ogr_Shape</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\mitab\ogr_TAB.vcxproj">
+      <Project>{5CBEDC87-70E2-3394-B220-233ECE9145A1}</Project>
+      <Name>ogr_TAB</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\tiger\ogr_Tiger.vcxproj">
+      <Project>{5BB99974-3EEF-340A-94D7-CF77B3997A64}</Project>
+      <Name>ogr_Tiger</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\vdv\ogr_VDV.vcxproj">
+      <Project>{7EFD9D87-B6F2-3508-8F89-194791CAF762}</Project>
+      <Name>ogr_VDV</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\vfk\ogr_VFK.vcxproj">
+      <Project>{D1018D66-10C8-36DA-8024-7F948DB2E219}</Project>
+      <Name>ogr_VFK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\vrt\ogr_VRT.vcxproj">
+      <Project>{7B4286DC-A1A3-3622-AF5C-084E70EB51B9}</Project>
+      <Name>ogr_VRT</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\wasp\ogr_WAsP.vcxproj">
+      <Project>{1B236EEB-32D5-329E-877E-F9F9CE7F48E2}</Project>
+      <Name>ogr_WAsP</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\wfs\ogr_WFS.vcxproj">
+      <Project>{A8D3A16B-B558-323B-9662-61DA6E853CFE}</Project>
+      <Name>ogr_WFS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\xls\ogr_XLS.vcxproj">
+      <Project>{893C7E88-FBC0-318F-B9AE-91AFE7276F6E}</Project>
+      <Name>ogr_XLS</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\xlsx\ogr_XLSX.vcxproj">
+      <Project>{B06566A6-D82B-3EBE-BDE7-F34BA2866D53}</Project>
+      <Name>ogr_XLSX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\geojson\ogr_geojson.vcxproj">
+      <Project>{FEC0B36A-F5C5-3427-B501-EC9BD6D24C63}</Project>
+      <Name>ogr_geojson</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\ogrinfo.vcxproj">
+      <Project>{37391155-DE93-377A-998E-EF5ED6A2C278}</Project>
+      <Name>ogrinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\ogrlineref.vcxproj">
+      <Project>{79EB2148-26B8-36A6-9440-255DA727B170}</Project>
+      <Name>ogrlineref</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\ogrsf_frmts.vcxproj">
+      <Project>{6064C917-FC9C-3277-9D9F-EED58F1B4F16}</Project>
+      <Name>ogrsf_frmts</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\generic\ogrsf_generic.vcxproj">
+      <Project>{3C4D9DB0-F89E-38CF-85C6-A4C1EDC150A3}</Project>
+      <Name>ogrsf_generic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\ogrtindex.vcxproj">
+      <Project>{0864FB8C-B5EC-3132-8E82-C300CB4CC912}</Project>
+      <Name>ogrtindex</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\frmts\pcidsk\sdk\pcidsk_sdk.vcxproj">
+      <Project>{CCE2F854-E3A9-316B-ADCD-A9D4A9545685}</Project>
+      <Name>pcidsk_sdk</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\ogr\ogrsf_frmts\shape\shapelib.vcxproj">
+      <Project>{DC89503A-DBB5-3A5D-A654-5A37528AE103}</Project>
+      <Name>shapelib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\gdal-3.6.4\msvc\apps\test_ogrsf.vcxproj">
+      <Project>{840176B9-FE7D-3D95-87DB-90A2D11D4E02}</Project>
+      <Name>test_ogrsf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
