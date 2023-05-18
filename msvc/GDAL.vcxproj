@@ -1195,6 +1195,9 @@
     <Object Include=".\apps\appslib.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\gdalmdimtranslate_lib.obj" />
     <ResourceCompile Include="..\gcore\Version.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gdal.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

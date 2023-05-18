@@ -79,11 +79,11 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "OSGeo\0"
             VALUE "FileDescription", "Geospatial Data Abstraction Library\0"
-            VALUE "FileVersion", GDAL_RELEASE_NAME "\0"
+            VALUE "FileVersion", "3.6.4" "\0"
             VALUE "InternalName", "GDAL\0"
             VALUE "LegalCopyright", "See LICENSE.TXT"
             VALUE "ProductName", "GDAL/OGR\0"
-            VALUE "ProductVersion", GDAL_RELEASE_NAME "\0"
+            VALUE "ProductVersion", "3.6.4" "\0"
             VALUE "WebPage", "http://www.gdal.org/\0"
         END
     END

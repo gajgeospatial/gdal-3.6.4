@@ -47,6 +47,7 @@
 #include "cpl_progress.h"
 #include "cpl_virtualmem.h"
 #include "cpl_minixml.h"
+#include "cpl_multiproc.h"
 #include "ogr_api.h"
 #endif
 

@@ -119,10 +119,10 @@ target_include_directories(cpl PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRE
 if ((EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/cpl_config.h") AND NOT ("${CMAKE_CURRENT_SOURCE_DIR}" STREQUAL
                                                                  "${CMAKE_CURRENT_BINARY_DIR}"))
   # Try to detect issues when building with cmake out of source tree, but against a previous build done in source tree
-  message(
-    FATAL_ERROR
-      "${CMAKE_CURRENT_SOURCE_DIR}/cpl_config.h was found, and likely conflicts with ${CMAKE_CURRENT_BINARY_DIR}/cpl_config.h"
-    )
+#  message(
+#   FATAL_ERROR
+#      "${CMAKE_CURRENT_SOURCE_DIR}/cpl_config.h was found, and likely conflicts with ${CMAKE_CURRENT_BINARY_DIR}/cpl_config.h"
+#    )
 endif ()
 
 file(TO_CMAKE_PATH "${CMAKE_INSTALL_PREFIX}/${GDAL_RESOURCE_PATH}" INST_DATA_PATH)

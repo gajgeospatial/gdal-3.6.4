@@ -867,5 +867,13 @@
     <Filter Include="Resource Files">
       <UniqueIdentifier>{6BA07755-3CD6-3E92-B038-5159C4E05B08}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e2c2c5ca-c8f6-4fa2-8216-a923bbf5174f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gdal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

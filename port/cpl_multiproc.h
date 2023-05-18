@@ -61,6 +61,7 @@ void CPL_DLL CPLUnlockFile(void *hLock);
 
 #ifdef DEBUG
 typedef struct _CPLMutex CPLMutex;
+//#define CPLMutex void
 typedef struct _CPLCond CPLCond;
 typedef struct _CPLJoinableThread CPLJoinableThread;
 #else

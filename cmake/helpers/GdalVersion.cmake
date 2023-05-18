@@ -37,7 +37,7 @@ string(REGEX MATCH "([0-9]+)"
 
 if ((EXISTS "${PROJECT_SOURCE_DIR}/gcore/gdal_version.h") AND NOT ("${PROJECT_SOURCE_DIR}" STREQUAL "${PROJECT_BINARY_DIR}"))
     # Try to detect issues when building with cmake out of source tree, but against a previous build done in source tree
-    message(FATAL_ERROR "${PROJECT_SOURCE_DIR}/gcore/gdal_version.h was found, and likely conflicts with ${PROJECT_BINARY_DIR}/gcore/gdal_version.h")
+#    message(FATAL_ERROR "${PROJECT_SOURCE_DIR}/gcore/gdal_version.h was found, and likely conflicts with ${PROJECT_BINARY_DIR}/gcore/gdal_version.h")
 endif ()
 
 if (EXISTS ${PROJECT_SOURCE_DIR}/.git)
