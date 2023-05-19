@@ -3,14 +3,14 @@ GDAL now uses CMAKE
 Merge all cmake find module files from prevous release to replace new version files 
 
 merge osmconf.ini in data directory
+copy proj.db from PROJ_DIR/data to data directory
 
 create build and data directories 
-	vc100/...
-	vc110/...
-	vc120/...
-	by running MakeBuildDirectories.bat
+	vc143/...
+	by running MakeBuildDirectories_vs2022.bat
 
 Subdirectories to merge
+	gdal.h								(Add GDAL_OF_GPKG_FASTACCESS)
 	ogr/ogrsf_frmts/gpkg/ogrgeopackagedatasource.cpp		(Add GDAL_OF_GPKG_FASTACCESS && options GPKG_Fast)
 	ogr/ogrsf_frmts/gpkg/ogrgeopackagedriver.cpp			(Add GPKG_FAST to options string)
  

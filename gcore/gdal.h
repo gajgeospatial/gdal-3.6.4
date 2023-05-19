@@ -917,6 +917,9 @@ GDALDatasetH CPL_DLL CPL_STDCALL GDALOpenShared(const char *, GDALAccess)
 #define GDAL_OF_BLOCK_ACCESS_MASK 0x300
 #endif
 
+/** GeoPackage Flag */
+#define GDAL_OF_GPKG_FASTACCESS 0x800
+
 GDALDatasetH CPL_DLL CPL_STDCALL GDALOpenEx(
     const char *pszFilename, unsigned int nOpenFlags,
     const char *const *papszAllowedDrivers, const char *const *papszOpenOptions,

@@ -36,8 +36,9 @@
 #include "ogrsqliteutility.h"
 #include "cpl_threadsafe_queue.hpp"
 #include "ograrrowarrayhelper.h"
-
+#ifndef _ExcludeConditional
 #include <condition_variable>
+#endif
 #include <mutex>
 #include <queue>
 #include <vector>
@@ -92,6 +93,7 @@ struct GPKGContentsDesc
 
 class OGRGeoPackageLayer;
 
+#ifndef _ExcludeConditional
 struct OGRGPKGTableLayerFillArrowArray
 {
     std::unique_ptr<OGRArrowArrayHelper> psHelper{};
@@ -109,7 +111,7 @@ struct OGRGPKGTableLayerFillArrowArray
     std::condition_variable oCV{};
     bool bIsFinished = false;
 };
-
+#endif
 /************************************************************************/
 /*                          GDALGeoPackageDataset                       */
 /************************************************************************/

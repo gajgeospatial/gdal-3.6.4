@@ -1445,10 +1445,16 @@ int GDALGeoPackageDataset::Open(GDALOpenInfo *poOpenInfo)
                                         : SQLITE_OPEN_READONLY))
             return FALSE;
 
-        if ((poOpenInfo->nOpenFlags & GDAL_OF_UPDATE) &&
-            poOpenInfo->papszOpenOptions &&
-            CPLTestBool(CSLFetchNameValueDef(poOpenInfo->papszOpenOptions,
-                                             "GPKG_FAST", "TRUE")))
+        bool fastop = false;
+		if ((poOpenInfo->nOpenFlags & GDAL_OF_VECTOR) && (poOpenInfo->nOpenFlags & GDAL_OF_GPKG_FASTACCESS))
+            fastop = true;
+        if (!fastop)
+        {
+            if (poOpenInfo->papszOpenOptions && CPLTestBool(CSLFetchNameValueDef(poOpenInfo->papszOpenOptions,
+                                                 "GPKG_FAST", "TRUE")))
+                fastop = true;
+        }
+        if ((poOpenInfo->nOpenFlags & GDAL_OF_UPDATE) && fastop)
         {
             OGRErr r1 = SQLCommand(hDB, "PRAGMA synchronous = OFF");
             if (r1 != OGRERR_NONE)
