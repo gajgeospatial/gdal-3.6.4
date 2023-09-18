@@ -141,7 +141,7 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Manifest>
-      <AdditionalManifestFiles>N:\Development\Dev_Base\gdal-3.6.4\apps\longpathaware.manifest;</AdditionalManifestFiles>
+      <AdditionalManifestFiles>..\..\apps\longpathaware.manifest;</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
@@ -187,7 +187,7 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Manifest>
-      <AdditionalManifestFiles>N:\Development\Dev_Base\gdal-3.6.4\apps\longpathaware.manifest;</AdditionalManifestFiles>
+      <AdditionalManifestFiles>..\..\apps\longpathaware.manifest;</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -233,7 +233,7 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Manifest>
-      <AdditionalManifestFiles>N:\Development\Dev_Base\gdal-3.6.4\apps\longpathaware.manifest;</AdditionalManifestFiles>
+      <AdditionalManifestFiles>..\..\apps\longpathaware.manifest;</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
@@ -279,7 +279,7 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Manifest>
-      <AdditionalManifestFiles>N:\Development\Dev_Base\gdal-3.6.4\apps\longpathaware.manifest;</AdditionalManifestFiles>
+      <AdditionalManifestFiles>..\..\apps\longpathaware.manifest;</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
@@ -325,7 +325,7 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Manifest>
-      <AdditionalManifestFiles>N:\Development\Dev_Base\gdal-3.6.4\apps\longpathaware.manifest;</AdditionalManifestFiles>
+      <AdditionalManifestFiles>..\..\apps\longpathaware.manifest;</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
@@ -370,7 +370,7 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Manifest>
-      <AdditionalManifestFiles>N:\Development\Dev_Base\gdal-3.6.4\apps\longpathaware.manifest;</AdditionalManifestFiles>
+      <AdditionalManifestFiles>..\..\apps\longpathaware.manifest;</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
