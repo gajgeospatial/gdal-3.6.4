@@ -20,3 +20,5 @@ msvc - Copy
 **/*.ilk
 **/*.jar
 Environment.opt
+msvc/x64/vs2022_Debug/Check_Directory_Structure/Check_Di.B1B067FF.tlog/CustomBuild.command.1.tlog
+msvc/x64/vs2022_Release/Check_Directory_Structure/Check_Di.B1B067FF.tlog/CustomBuild.command.1.tlog
