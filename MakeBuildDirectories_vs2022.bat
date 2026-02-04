@@ -9,5 +9,5 @@ if not exist msvc\\vc143\\x64\\bin mkdir msvc\\vc143\\x64\\bin
 if not exist msvc\\vc143\\x64\\bin\\gdalplugins mkdir msvc\\vc143\\x64\\bin\\gdalplugins
 if not exist msvc\\vc143\\x64\\bin\\java mkdir msvc\\vc143\\x64\\bin\\java
 if not exist msvc\\vc143\\x64\\data mkdir msvc\\vc143\\x64\\data
-copy /y data\* msvc\\vc143\\x64\\data
+xcopy /S /E /Y data\* msvc\\vc143\\x64\\data
 
