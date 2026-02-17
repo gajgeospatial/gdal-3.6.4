@@ -20,5 +20,14 @@ msvc - Copy
 **/*.ilk
 **/*.jar
 Environment.opt
+msvc/x64/
+msvc/x64/vs2022_Debug/Check_Directory_Structure/Check_Di.B1B067FF.tlog/Check_Directory_Structure.lastbuildstate
 msvc/x64/vs2022_Debug/Check_Directory_Structure/Check_Di.B1B067FF.tlog/CustomBuild.command.1.tlog
+msvc/x64/vs2022_Debug/Check_Directory_Structure/Check_Di.B1B067FF.tlog/CustomBuild.read.1.tlog
+msvc/x64/vs2022_Debug/Check_Directory_Structure/Check_Di.B1B067FF.tlog/CustomBuild.write.1.tlog
+msvc/x64/vs2022_Debug/Check_Directory_Structure/Check_Directory_Structure.recipe
+msvc/x64/vs2022_Release/Check_Directory_Structure/Check_Di.B1B067FF.tlog/Check_Directory_Structure.lastbuildstate
 msvc/x64/vs2022_Release/Check_Directory_Structure/Check_Di.B1B067FF.tlog/CustomBuild.command.1.tlog
+msvc/x64/vs2022_Release/Check_Directory_Structure/Check_Di.B1B067FF.tlog/CustomBuild.read.1.tlog
+msvc/x64/vs2022_Release/Check_Directory_Structure/Check_Di.B1B067FF.tlog/CustomBuild.write.1.tlog
+msvc/x64/vs2022_Release/Check_Directory_Structure/Check_Directory_Structure.recipe
