@@ -12,6 +12,9 @@
 #  define GDAL_VERSION_BUILD    0
 #endif
 
+#ifndef GDAL_RELEASE_NAME 
+#define GDAL_RELEASE_NAME "3.6.4.0"
+#endif
 /* GDAL_COMPUTE_VERSION macro introduced in GDAL 1.10 */
 /* Must be used ONLY to compare with version numbers for GDAL >= 1.10 */
 #ifndef GDAL_COMPUTE_VERSION
